@@ -15,7 +15,7 @@ import google.generativeai as genai
 from google.generativeai import caching
 
 
-from pyneuphonic import Neuphonic, TTSConfig, Agent
+from pyneuphonic import Neuphonic, TTSConfig, Agent, save_audio
 from pyneuphonic.player import AudioPlayer
 import subprocess
 import json
@@ -43,28 +43,24 @@ tts_config = TTSConfig(
 )
 
 
-async def play_audio_async(audio_text):
-    # Simulate the audio playing process asynchronously (e.g., call your TTS service)
-    await asyncio.sleep(2)  # Simulating audio playback delay
+# async def play_audio_async(audio_text):
 
-    with AudioPlayer() as player:
-        print('playing audio')
-        try:
-            audio_response = sse.send(audio_text, tts_config=tts_config)
-            # st.session_state.sse_client.send(
-            #     audio_text, 
-            #     tts_config=st.session_state.tts_config
-            # )
-            player.play(audio_response)
-        except Exception as e:
-            st.error(f"Error playing audio: {str(e)}")
+#     audio_response = sse.send(audio_text, tts_config=tts_config)
+#     audio_bytes = bytearray()
+#     for item in audio_response:
+#         audio_bytes += item.data.audio
+#         print(item.data.text[:10], audio_text[:10].strip())
+#         if item.data.text[:10] == audio_text[:10].strip():
+#             break
+#         print(item.data.text)
+#     save_audio(audio_bytes=audio_bytes, file_path='output.wav')
 
-    print('Audio played')
+#     print('Audio played')
 
-# Wrapper to run asyncio code in a thread
-def play_audio(audio_text):
-    loop = asyncio.new_event_loop()
-    threading.Thread(target=loop.run_until_complete, args=(play_audio_async(audio_text),)).start()
+# # Wrapper to run asyncio code in a thread
+# def play_audio(audio_text):
+#     loop = asyncio.new_event_loop()
+#     threading.Thread(target=loop.run_until_complete, args=(play_audio_async(audio_text),)).start()
 
 
 
@@ -431,7 +427,7 @@ def render_inventory():
             )
     st.markdown("</div>", unsafe_allow_html=True)
 
-def render_chat():
+def render_chat(got_audio=False):
     st.markdown("<div class='stat-card'>", unsafe_allow_html=True)
     location = st.session_state.game_state['current location']
     effect = st.session_state.game_state['current location special affect - and the special affect description']
@@ -446,6 +442,9 @@ def render_chat():
         # Get only the last two messages
         for message in st.session_state.chat_history[-4:]:
             st.markdown(f"<div class='chat-message'>{message}</div>", unsafe_allow_html=True)
+
+    if os.path.exists('output.wav') and got_audio:
+        st.audio('output.wav', format="audio/wav", loop=False, autoplay=True)
 
     
     return chat_container
@@ -466,18 +465,11 @@ def main():
         render_inventory()
     
     with col2:
-        chat_container = render_chat()
-        
-        # Initialize audio components if not in session state
-        # if 'audio_player' not in st.session_state:
-        #     st.session_state.audio_player = AudioPlayer()
-        #     st.session_state.sse_client = client.tts.SSEClient()
-        #     st.session_state.tts_config = TTSConfig(
-        #         model='neu_hq',
-        #         speed=1.,
-        #         voice='f8698a9e-947a-43cd-a897-57edd4070a78'
-        #     )
-        
+        if os.path.exists('output.wav'):
+            chat_container = render_chat(got_audio=True)
+        else:
+            chat_container = render_chat()
+
         # Input area
         user_input = st.text_input("What would you like to do?", key="user_input")
         if st.button("Send", key="send_button"):
@@ -518,19 +510,29 @@ def main():
                     location_effect = f"({new_state['current location special affect - and the special affect description']})"
                 else:
                     location_effect = ''
-                
-                # Clear input and rerun to update display
-                # st.session_state.user_input = ""
-                # show the updated chat
+
                 chat_container.empty()
 
-                chat_container = render_chat()
+
+
+                
                 print('rendered text')
 
-                try:
-                    play_audio(audio_text)
-                except Exception as e:
-                    st.error(f"Error playing audio: {str(e)}")
+                # play_audio(audio_text)
+                audio_response = sse.send(audio_text, tts_config=tts_config)
+                audio_bytes = bytearray()
+                for item in audio_response:
+                    audio_bytes += item.data.audio
+                    print(item.data.text[-10:], '--_-----_---__--', audio_text.strip()[-11:-1])
+                    print(item.data.text[-10:] == audio_text.strip()[-11:-1])
+                    if item.data.text[-10:] == audio_text.strip()[-11:-1]:
+                        break
+                    print(item.data.text)
+                save_audio(audio_bytes=audio_bytes, file_path='output.wav')
+                print('Audio played')
+
+                
+                chat_container = render_chat(got_audio=True)
 
 
                 st.rerun()
