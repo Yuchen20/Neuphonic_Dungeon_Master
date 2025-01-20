@@ -1,0 +1,805 @@
+---
+# 00World Setting.md
+
+**World Setting:**
+
+In the ancient land of **Eldoria**, magic once flowed freely, bringing prosperity to its vast kingdoms and enchanted forests. The land was protected by an order of legendary heroes who wielded sacred relics, ensuring peace across the realm. At the heart of Eldoria stood the magnificent **Castle of Kings**, where rulers upheld balance and harmony between mortals, magic, and nature.
+
+However, peace was shattered when an ambitious sorcerer, known only as the **Evil King**, sought ultimate power. By tapping into forbidden dark magic, he unleashed a cataclysmic curse upon the world, spreading a deadly mist across much of Eldoria. This mist corrupts all it touches, bringing death to those who dare venture beyond the safe, untainted locations that remain. Villages and cities that once flourished now lie in ruin or isolation, cut off by the ever-encroaching curse. 
+
+In the wake of the curse, monsters emerged from the shadows, driven mad by the evil energy. Ancient creatures that once slumbered peacefully now roam the lands, attacking any who dare enter their domains. The Evil King, from his fortress shrouded in mist, rules with an iron fist, commanding cursed creatures and dark forces that continue to plague the land.
+
+---
+
+**Current Setting:**
+
+Now, the few survivors live in scattered pockets of safety, where they struggle to hold onto what remains of civilization. The cursed mist isolates these safe zones, allowing only small bands of adventurers, like yourself, to brave the wilds. Legends speak of ancient relics—powerful enough to break the curse—hidden deep in forgotten locations, guarded by monsters and treacherous landscapes. These relics, however, are believed to be the only hope of overthrowing the Evil King and restoring Eldoria to its former glory.
+
+Eldoria's remaining settlements—small villages, markets, and sanctuaries—are doing their best to withstand the dangers that threaten them daily. In the **Small Village**, where your journey begins, the mayor speaks of increasing attacks from bandits and strange creatures drawn to the darkness. The land itself seems to grow colder and more sinister with each passing day.
+
+In the north, snow-covered mountains hide the remains of ancient kingdoms, while the eastern deserts are slowly being consumed by the cursed mist. To the west lies the great forest, a once vibrant woodland now twisted by dark energy. It is rumored that somewhere in these locations lies a weapon of immense power—**The Hero’s Spear**—one of the few artifacts that might stand a chance against the Evil King’s reign.
+
+The path ahead is filled with danger, mystery, and power. You must seek out ancient relics, confront deadly monsters, and navigate the darkened lands of Eldoria. Will you be the one to break the curse and return peace to the realm?
+
+---
+
+**Key Locations:**
+
+- **Evil King's Castle:** Shrouded in mist, this is the dark fortress where the Evil King resides. Few have entered, and none have returned.
+- **The Small Village:** A haven for survivors, but under constant threat from bandits and monsters. The mayor seeks brave adventurers to defend it.
+- **Shadowy Thicket:** A cursed forest filled with whispering trees and haunted by dangerous creatures. Rumor has it a treasure lies hidden within, waiting to be found by those who dare.
+- **Great Forest Trail & Beyond:** Leads into the depths of the once-glorious Great Forest, now corrupted by the curse. Dangerous creatures lurk, and powerful relics are rumored to be hidden here.
+- **The Deserts:** To the east, vast dunes stretch as far as the eye can see. Sandstorms and ancient monsters, as well as treasures buried by time, await those who explore these dangerous lands.
+
+---
+
+The fate of Eldoria rests in the hands of those brave enough to venture into the cursed lands, defeat the Evil King, and restore the light. Are you up to the challenge?
+
+---
+# 01World Map.md
+
+[Frozen Peaks] : (n) mist; (s) [Mountain Trials (big feet)]; (e) mist; (w) mist; Description: "The biting wind cuts through you as you stand at the base of the Frozen Peaks, their snow-capped summits disappearing into the swirling mist above.  Each gust carries a chill that seeps into your bones, and the air hangs heavy with the silence of falling snow.  The path ahead winds upwards, treacherous and ice-covered, disappearing into the blinding white. The ruins of an ancient watchtower, half-buried in snow, are a testament to the unforgiving nature of this place. You spot the shadowy figure of a lone monk further up the path, seemingly unbothered by the cold. "; Safe?: Yes; Monsters []; Special Characters: [Old Monk]; Special Item: [Legendary Hero's Sward, Sacred Scroll]; Special Condition: ["Cold Breath" — Due to the extreme cold, you lose one health point for every action you take.;]
+NPC: [
+    Worn Traveler: (Knowledge: "The Frozen Peaks are a dangerous place.  People go missing up there all the time, lost to the cold and the mists. They say there's a monk who lives somewhere in these peaks, but I wouldn't know where to find him."; Objective: "Warn the player about the dangers of the peaks, hinting at the monk's presence."; Default-Dialog: "Best be careful up there, traveler.  The mountains don't give back what they take."), 
+    Restless Spirit: (Knowledge: "Bound to the peaks in life and in death, I wander these slopes for eternity, seeking solace I cannot find.  Beware the biting wind; it carries whispers of madness."; Objective: "Share a chilling piece of lore, hinting at the mental strain of the peaks."; Default-Dialog: "The cold...it never leaves...").
+].
+
+
+[Mountain Trials] : (n) [Frozen Peaks]; (s) [Great Forest]; (e) mist; (w) mist; Description: "The narrow path twists and turns along the mountainside, a treacherous ribbon of rock and ice clinging precariously to the cliff face.  The biting wind threatens to rip you from the path with every gust, and the ground crunches beneath your feet with the threat of hidden ice. Below, the forest sprawls like a dark green sea, and in the distance, you can just make out the peaks of the mountains, shrouded in mist.  You spot the large, three-toed footprints of what must be a Mountain Troll further along the path."; Safe?: Yes; Monsters [Mountain Troll;Snow Leopard]; Special Characters: []; Special Item: []; Special Condition: ["Cold Breath" — Due to the extreme cold, you lose one health point for every action you take.;]
+NPC: [
+    Exhausted Hunter: (Knowledge: "These mountains are home to some tough creatures, let me tell you.  Mountain Trolls, Snow Leopards... seen 'em all.  Best be ready for a fight if you're heading further up.", "The path down leads to a dark and dangerous forest.  Heard tales of strange creatures and ancient magic lurking within."; Objective: "Warn the player about the dangers ahead, both in the mountains and the forest below."; Default-Dialog: "You new around these parts?  It's rough going, that's for sure.")].
+
+[Great Forest] : (n) [Mountain Trials]; (s) [Great Forest Trail]; (e) [Mud Land]; (w) [Goblin Tribe]; Description: "A hush falls over you as you enter the Great Forest, the sunlight dimming as a canopy of ancient trees closes overhead.  The air is thick with the smell of damp earth and decaying leaves, and strange, bird-like calls echo through the dense foliage.  Giant roots snake across the path, forcing you to watch your step, and webs spun from a substance that glitters unnaturally in the dim light drape between the trees.  Something rustles in the undergrowth, just out of sight, and you feel a prickle of unease crawl up your spine."; Safe?: No; Monsters [Forest Troll, Giant Spiders]; Special Characters: [Forest Guardian]; Special Item: [Ancient Amulet]; Special Condition: ["Dense Foliage" — Movement is restricted, reducing speed.]
+NPC: [
+    Nervous Wanderer: (Knowledge: "This forest...it feels wrong.  The trees whisper, the shadows move... I just want to get out.", "There's a path south that leads to a village. Or so I've heard. I'm heading east, trying to avoid whatever's lurking in those woods over there."; Objective: "Heighten the sense of unease, hinting at the forest's dangers and the presence of the Goblin Tribe to the west."; Default-Dialog: "Don't you...don't you hear that?  It's like the forest itself is watching..."), 
+    Hermit: (Knowledge: "I've lived in these woods for longer than I can remember, seeking refuge from the troubles of the world. The forest provides, if you know how to listen.", "The path to the south?  It's safe enough, but be wary of the creatures that lurk in the shadows."; Objective: "Offer a less fearful perspective, hinting at the Forest Guardian's presence and the safety of the southern path."; Default-Dialog: "Peace be with you, traveler.  What brings you to this ancient place?").
+].
+[Goblin Tribe] : (n) mist; (s) mist; (e) [Great Forest]; (w) [Goblin King]; Description: "The air buzzes with the chaotic energy of the Goblin Tribe - a cacophony of shouts, laughter, and the clang of crude weapons against wood.  Roughly hewn huts huddle together beneath a thick canopy of trees, and the ground is littered with bones picked clean and discarded. A pungent smell, like burnt meat and something else you can't quite place, stings your nostrils.  You spot a group of goblins huddled around a flickering fire, their eyes gleaming with a mixture of malice and curiosity as they watch you approach."; Safe?: No; Monsters [Goblins]; Special Characters: [Goblin Chieftain]; Special Item: [Goblin's Treasure Map]; Special Condition: ["Goblin Traps" — Hidden traps that deal damage in chance when exploring the location.]
+NPC: [
+    Goblin Scout: (Knowledge: "You! New face! What you want? You here to trade? Or maybe... you here to fight?", "Boss not like visitors.  You make trouble, you end up like bones over there.", "East?  That way forest.  Big trees, scary things.  We stay here.  Safer."; Objective: "Introduce the Goblin Tribe's dynamic, hinting at the Goblin King's authority and the dangers of the forest to the east."; Default-Dialog: "Hey, you!  You got shiny things? We trade! Or maybe... we fight!"), 
+    Old One-Eye: (Knowledge: "Goblins not so bad, you know?  Just misunderstood. And hungry. Always hungry.", "You want treasure?  Go north. That where big boss lives.  He got lots of treasure."; Objective: "Offer a different perspective on the goblins, hinting at the Goblin King's wealth and the potential for treasure to the north."; Default-Dialog: "Hehehe... you scared, little morsel?  Don't worry... I only bite sometimes.").
+].
+[Goblin King] : (n) mist; (s) mist; (e) [Goblin Tribe]; (w) mist; Description: "The air hangs heavy with the stench of decay and the lingering scent of blood as you enter the Goblin King's domain.  Crude banners, stitched from the skins of unknown creatures, hang limply from the trees, and the ground is littered with bones, both animal and...other.  A crude throne, fashioned from a twisted mass of wood and bone, sits atop a mound of dirt and rubble, and seated upon it is a figure that radiates an aura of primal savagery - the Goblin King. His eyes, two points of malevolent intelligence, fix on you, and you know in your gut that you've entered the den of a predator."; Safe?: No; Monsters [Goblin Warriors]; Special Characters: [Goblin King]; Special Item: []; Special Condition: ["King's Presence" — All goblins in this area have increased attack power.]
+NPC: [
+    Goblin Guard: (Knowledge: "You dare approach the Goblin King?!  You got guts, I'll give you that.  But guts won't save you from his wrath.", "King, he's got a nose for treasure, that one.  Always sniffing out shiny things.  You best have something good to offer, or you'll be his next trophy.", "West?  That where rest of tribe is.  Noisy bunch.  But here... here it's quiet.  Like the calm before the storm."; Objective: "Establish the Goblin King's dominance and the dangers of approaching him, hinting at his greed and the potential for offerings."; Default-Dialog: "Halt!  State your business, or prepare to face the consequences!").
+].
+[Mud Land] : (n) mist; (s) mist; (e) [Mud Land (deeper in the land)]; (w) [Great Forest]; Description: "The air is thick with the stench of decay and buzzing with insects as you enter the Mud Land.  The ground beneath your feet squelches ominously, threatening to steal your boots with every step.  Twisted trees, their roots submerged in the murky water, reach up like skeletal fingers, and a thick fog hangs low, obscuring your vision. The silence is broken only by the croaking of frogs and the occasional splash of something moving beneath the surface of the water. You notice footprints - human-shaped, but too large to be natural - pressed deep into the mud ahead, leading deeper into the swamp."; Safe?: No; Monsters [Mud Serpent, Swamp Creatures]; Special Characters: []; Special Item: [Enchanted Boots]; Special Condition: ["Quicksand Patches" — Risk of being stuck if not careful.]
+NPC: [
+    Distraught Mud-Caked Figure: (Knowledge: "This place... it's cursed! I lost my companions to the swamp... swallowed whole they were! And those Mud Serpents... they're everywhere!", "East? There's nothing but more swamp, more despair.  Head back to the forest while you still can!", "West... the forest. It's dangerous, but at least it's not this... this suffocating bog."; Objective: "Instill fear and urgency, emphasizing the Mud Land's dangers and the presence of Mud Serpents, while hinting at the relative safety of the forest to the west."; Default-Dialog: "Stay back! The swamp... it takes everything...").
+].
+[Mud Land (deeper in the land)] : (n) [Witch Coven]; (s) mist; (e) [_Boss_ Frog King]; (w) [Mud Land]; Description: "Deeper into the Mud Land, the air grows heavy, thick with moisture and the cloying scent of rot. The fog presses in, clinging to you like a shroud, and the path disappears beneath a carpet of slick, moss-covered stones. Strange symbols, painted in a phosphorescent green slime, glow faintly on the trunks of the gnarled trees, and you hear a low, guttural croaking that seems to vibrate in your very bones. A palpable sense of dread seeps into you with each step."; Safe?: No; Monsters [Mud Golem, Swamp Creatures]; Special Characters: []; Special Item: [Mire Stone]; Special Condition: ["Thick Fog" — Visibility is severely limited.]
+NPC: [
+    Glowing Firefly Swarm: (Knowledge: "We dance among the whispers of ancient magic, drawn to the power that pulses within this mire. Beware, traveler, for the swamp holds secrets best left undisturbed.", "The path east leads to a presence both ancient and terrible. Only a fool would dare to challenge the king of this domain.", "North? Ah, the whispers lead there too. A coven of powerful witches makes their home in the heart of the mist. Seek them out if you dare, but be warned, their magic is as fickle as the swamp itself."; Objective: "Serve as a guide and a warning, hinting at the Frog King to the east and the Witch Coven to the north, while emphasizing the inherent magic and danger of the deeper Mud Land."; Default-Dialog:  [The fireflies swarm around you, forming shapes and patterns that seem to convey meaning, but remain frustratingly out of reach of your understanding.]).
+].
+
+[_Boss_ Frog King] : (n) mist; (s) mist; (e) mist; (w) [Mud Land (deeper in the land)]; Description: "The stench of rot is overpowering, and the very air seems to vibrate with the rhythmic croaking of countless frogs. Before you lies a clearing, dominated by a massive, moss-covered form. The Frog King, a grotesque parody of amphibian majesty, regards you with cold, reptilian eyes. His slimy skin glistens in the pale light that filters through the canopy, and his throat bulges as he lets out a deafening croak. This is his domain, and you are an intruder."; Safe?: No; Monsters [Frog King]; Special Characters: [Trapped Trader]; Special Item: [Frog King's Crown]; Special Condition: ["Slippery Ground" — Movement is more difficult and may cause slips, making missed attack more frequent.]
+NPC: [
+    Trapped Trader: (Knowledge: "Please, help me! The Frog King's minions captured me, and now I'm trapped here! If you defeat the Frog King, I can reward you handsomely!", "The Frog King is a powerful creature of the swamp, but he's vulnerable to fire! Use that to your advantage!", "West? That's the way I came, but it's crawling with the Frog King's minions. It's too dangerous!"; Objective: "Seek the player's help in defeating the Frog King, providing valuable information about the Frog King's weakness to fire and the dangers of the western path."; Default-Dialog: "Help me, hero! Only you can save me from this nightmare!").
+].
+
+[Witch Coven] : (n) mist; (s) [Mud Land (deeper in the land)]; (e) mist; (w) mist; Description: "Twisted trees, their branches draped with moss and strange, glowing fungi, form a natural archway leading into a clearing. The air hums with an unnatural energy, sending a shiver down your spine. A fire crackles merrily in the center, casting dancing shadows on the figures that surround it.  Three cloaked figures, their faces hidden in the depths of their hoods, chant in unison, their voices a low, guttural thrum that seems to weave itself into the fabric of the swamp. This is the heart of the Witch Coven, a place of power and ancient, unsettling magic."; Safe?: No; Monsters [Witches, Cursed Spirits]; Special Characters: [High Witch]; Special Item: []; Special Condition: ["Cursed Aura" — Reduced health regeneration.]
+NPC: [
+    Whispering Wind: (Knowledge: "Beware, traveler. The witches' magic is potent, their bargains steep.  They are drawn to power, and their motives are never pure.", "The swamp itself whispers to them, grants them knowledge and power. They are one with this place, for better or for worse.", "The paths out of the swamp are treacherous, filled with unseen dangers.  Tread carefully, lest the swamp claim you for its own."; Objective: "Warn the player about the dangers of the swamp and the unpredictable nature of the witches, while hinting at the power they wield."; Default-Dialog: "Turn back...turn back...").
+].
+
+[Great Forest Trail] : (n) [Great Forest]; (s) [Small Village]; (e) mist; (w) mist; Description: "Emerging from the denser part of the forest, you find yourself on a well-worn trail. Sunlight filters through the canopy above, dappling the path with light and shadow. The air is still heavy with the scent of pine and damp earth, but a gentle breeze carries the sound of birdsong and the distant murmur of running water. The trail is muddy in places, and you can see the footprints of deer and other woodland creatures. There's a sense of peace here, a respite from the oppressive atmosphere of the deeper forest."; Safe?: Yes; Monsters [Slimes]; Special Characters: []; Special Item: []; Special Condition: [].
+NPC: [
+    Traveling Merchant: (Knowledge: "Ah, a fellow traveler! This path leads south to a charming village. It's a peaceful place, a welcome rest for weary souls like ourselves.", "The forest can be a dangerous place, especially at night. Stick to the path, and you should be safe.", "North? That's where the real forest begins. Dark and full of whispers. Not for the faint of heart."; Objective: "Offer directions and advice, guiding the player towards the village to the south while subtly warning about the dangers of venturing deeper into the forest to the north."; Default-Dialog: "Good day to you, traveler.  May your journey be safe and prosperous.").
+].
+[Small Village] : (n) [Great Forest Trail]; (s) [Yacht]; (e) [Market]; (w) [Mayor's House]; Description: "The sounds of laughter and chatter greet you as you enter the small village. Children chase each other through a bustling marketplace, their voices a welcome contrast to the silence of the forest.  Colorful banners flap gently in the breeze, advertising wares from nearby towns and villages.  The aroma of baking bread and roasted meat wafts from a nearby tavern, beckoning you inside.  A sense of warmth and community permeates the air, a stark contrast to the dangers that lie beyond its borders."; Safe?: Yes; Monsters [None]; Special Characters: []; Special Item: []; Special Condition: ["Safe Haven" — Rest here to recover health and prepare for upcoming challenges.]
+NPC: [
+    Friendly Villager: (Knowledge: "Welcome to our humble village, traveler! We're a friendly bunch here.  Feel free to rest and recharge before continuing on your journey.", "The market is the heart of our village. You can find anything you need there - supplies, weapons, even information, if you know where to look.", "The Mayor's house is just to the west. He's a wise and kind leader, always willing to help those in need."; Objective: "Welcome the player to the village, directing them towards the market to the east and the Mayor's house to the west."; Default-Dialog: "Well met, traveler! What brings you to our little corner of the world?").
+].
+[Mayor's House] : (n) mist; (s) mist; (e) [Small Village]; (w) mist; Description: "You step inside the Mayor's house, and the door closes softly behind you, shutting out the noise of the village. A fire crackles merrily in the hearth, casting a warm glow over the cozy room.  Bookshelves line the walls, crammed with volumes on history, magic, and various other subjects.  A large map, its edges frayed with age, hangs above the fireplace, depicting the surrounding lands and the treacherous mist that encroaches from the east. The Mayor sits behind a sturdy oak desk, a weary but kind smile on his face.  He gestures for you to take a seat."; Safe?: Yes; Monsters [None]; Special Characters: [Mayor]; Special Item: []; Special Condition: ["Leader's Guidance" — Gain useful hints for your journey.]
+NPC: [
+    Mayor: (Knowledge: "I've heard whispers on the wind of a great evil stirring in the east. The Evil King grows stronger, his power corrupting the very land itself.", "Legend speaks of ancient heroes who once wielded weapons of immense power.  Weapons capable of vanquishing even the darkest of evils.  Seek out these relics, hero.  They are our only hope.", "The forest to the south is said to hold ancient magic, both wondrous and terrible. Tread carefully should you choose to venture there."; Objective: "Warn the player of the Evil King's growing power in the east and guide them towards seeking out ancient relics, hinting at the power of the southern forest."; Default-Dialog: "You have a strong heart, traveler.  I can see it in your eyes.  But strength alone will not be enough to defeat the darkness that threatens to consume us all.").
+].
+[Yacht] : (n) [Small Village]; (s) [Fishing Dock]; (e) mist; (w) mist; Description: "The once-majestic yacht now sits low in the water, its sails tattered and torn.  The deck is littered with debris and the remnants of past revelry - broken bottles, discarded playing cards, and the occasional glint of gold.  A group of rough-looking individuals, their faces weathered by sun and salt, lounge on barrels and crates, their laughter carrying across the water.  They eye you with a mixture of suspicion and amusement."; Safe?: No; Monsters [Pirates, Pirate Captain]; Special Characters: []; Special Item: [Stolen Treasure]; Special Condition: ["Pirate Ambush" — Pirates may attack when entering or leaving the yacht.]
+NPC: [
+    One-Eyed Pete: (Knowledge: "This here's the Sea Serpent, fastest ship these waters ever saw... once.  Now she's home sweet home.", "Captain, he's got a nose for treasure, always lookin' for the next big score.  Last I heard, he was talkin' about something buried out in the desert.", "You lookin' to join up?  We always got room for one more... if you got the stomach for it."; Objective: "Introduce the Sea Serpent and its crew, hinting at the Pirate Captain's interest in the desert and the possibility of joining their ranks."; Default-Dialog: "Ahoy there, matey! What brings ye to our humble abode?").
+].
+[Fishing Dock] : (n) [Yacht]; (s) mist; (e) mist; (w) mist; Description: "Salt spray stings your face as you stand on the weathered planks of the fishing dock.  The cries of gulls mingle with the rhythmic crash of waves against the pilings.  Fishing nets, heavy with the day's catch, are piled nearby, and the air is thick with the smell of salt and fish.  A lone figure, bundled in a thick coat, sits at the edge of the dock, his fishing rod a patient sentinel against the endless horizon."; Safe?: Yes; Monsters [None]; Special Characters: []; Special Item: [Old Fisherman's Rod, Pirate Captain’s lost treasure (can be fished out by Old Fisherman's Rod)]; Special Condition: ["Fishing Spot" — Can catch useful fish here.]
+NPC: [
+    Old Fisherman: (Knowledge: "The sea, she's a harsh mistress, but she provides for those who respect her.", "They say the Pirate Captain lost a chest of treasure overboard a few weeks back.  Reckons it's still out there, somewhere beneath the waves.", "The best fishing?  Follow the birds, lad.  They know where the good schools are hidin'."; Objective: "Offer wisdom about the sea, hint at the Pirate Captain's lost treasure, and provide advice on finding the best fishing spots."; Default-Dialog: "Mornin', son.  The fish are bitin' today.  Got a mind to try your luck?").
+].
+[Market] : (n) [Blacksmith]; (s) [Potion Crafter]; (e) [Small Village]; (w) [Guards]; Description: "The marketplace is a riot of color and sound.  Vendors hawk their wares from beneath brightly striped awnings, their voices a practiced blend of enthusiasm and persuasion.  The aroma of spices and exotic fruits mingles with the smell of fresh bread and roasted meat, creating a sensory feast that assaults your nostrils.  Crowds of villagers and travelers alike jostle for space, their conversations a mix of gossip, news, and haggling.  You could easily lose yourself in the vibrant chaos of the market."; Safe?: Yes; Monsters [None]; Special Characters: [Trader]; Special Item: []; Special Condition: [].
+NPC: [
+    Spiced Goods Vendor: (Knowledge: "Welcome, traveler! I have spices from the farthest reaches of the known world! Guaranteed to add flavor to even the blandest of meals!", "Heard it from a passing caravan - the desert to the east is becoming even more treacherous.  Sandstorms rage for days, and strange creatures stalk the dunes.", "If you're headed west, watch out for the guards.  They're a strict lot, those ones, always on the lookout for trouble."; Objective: "Attract customers with exotic wares, provide a warning about the dangers of the eastern desert, and hint at the strict nature of the western guards."; Default-Dialog: "Come closer, friend! Don't be shy!  My prices are the best in the village!").
+].
+[Blacksmith] : (n) mist; (s) [Market]; (e) mist; (w) mist; Description: "The air hangs heavy with the scent of coal smoke and hot metal as you enter the blacksmith's forge.  The rhythmic clang of hammer against steel echoes through the air, accompanied by the roar of the furnace.  Sparks shower from the anvil as the blacksmith, a burly figure with arms like tree trunks, hammers a glowing piece of metal into shape. Tools and weapons of all shapes and sizes line the walls, each one a testament to the blacksmith's skill."; Safe?: Yes; Monsters [None]; Special Characters: [Blacksmith]; Special Item: []; Special Condition: ["Weapon Mastery" — Upgrade your weapons here.]
+NPC: [
+    Blacksmith: (Knowledge: "A good weapon is more than just a tool, it's an extension of yourself.  It needs to be strong, reliable, and sharp enough to cleave through any obstacle.", "They say the metal from the Frozen Peaks holds a unique power.  Weapons forged from it are said to be lighter, stronger, and imbued with the very essence of the mountains.", "The swamps to the east are a breeding ground for all sorts of nasty creatures.  If you're headed that way, you'll need something that can cut through thick hide and bone."; Objective: "Impart the importance of quality weaponry, hinting at the power of materials from the Frozen Peaks and the need for specific weapons to combat swamp creatures to the east."; Default-Dialog: "Can I help you with something, traveler?  Or are you just here to admire the craft?").
+].
+[Potion Crafter] : (n) [Market]; (s) mist; (e) mist; (w) mist; Description: "The Potion Crafter's shop is a dimly lit space, filled with the pungent aroma of herbs, spices, and other unidentifiable ingredients.  Shelves overflow with jars and bottles of every size and description, each one containing a concoction of questionable color and consistency.  Dried herbs hang from the ceiling, casting strange shadows in the flickering candlelight.  The Potion Crafter, a wizened figure with eyes that gleam with unsettling intelligence, gestures you inside."; Safe?: Yes; Monsters [None]; Special Characters: [Potion Crafter]; Special Item: [Healing Potions]; Special Condition: ["Alchemist's Secrets" — Create new potions using gathered ingredients.]
+NPC: [
+    Potion Crafter: (Knowledge: "The world is filled with ingredients, traveler, each one a source of potential power.  It's just a matter of knowing how to unlock it.", "The venom of the Mud Serpents is deadly, but in the right hands, it can be refined into a potent elixir.  A cure for even the deadliest of poisons.", "The spirits that haunt the graveyard to the north are drawn to powerful emotions.  Their essence can be captured, distilled... and used to fuel potent magic."; Objective: "Introduce the concept of alchemy, hinting at the possibility of using Mud Serpent venom for potions and the power inherent in the spirits of the northern graveyard."; Default-Dialog: "Ah, a fellow seeker of knowledge! What wonders can I help you discover today?").
+].
+[Guards] : (n) mist; (s) mist; (e) [Desert 1]; (w) [Market]; Description: "Two guards, clad in gleaming armor, stand watch at the western edge of the village.  Their faces are hardened, their eyes constantly scanning the horizon.  Their hands rest on the hilts of their swords, ready to draw at a moment's notice.  Behind them, the sun dips below the horizon, casting the desert in a blood-red glow.  This is the edge of civilization, and beyond it lies a land of unforgiving beauty and ancient dangers."; Safe?: Yes; Monsters [None]; Special Characters: [Captain of the Guards]; Special Item: [Guard's Shield]; Special Condition: ["Protection" — Guards provide safety and tips for desert travel.]
+NPC: [
+    Veteran Guard: (Knowledge: "The desert is a harsh mistress, traveler.  Heat, sandstorms, and creatures that have adapted to survive in that desolate wasteland.", "Legend has it that a powerful artifact, the Hero's Spear, is hidden somewhere in the northern mountains.  It is said to grant its wielder dominion over the very sands themselves.", "West lies the village, a haven of peace in this troubled world.  But even here, danger lurks at the edges.  Stay vigilant."; Objective: "Warn the player about the dangers of the desert and the creatures that inhabit it, hint at the existence and power of the Hero's Spear in the north, and remind them that even in the relative safety of the village, vigilance is key."; Default-Dialog: "State your business, traveler.  And be quick about it.").
+].
+[Desert 1] : (n) [Desert 2]; (s) [Desert 3]; (e) [Guards]; (w) [Canyon]; Description: "The sun beats down relentlessly as you enter the desert, the air shimmering with heat.  The sand stretches out before you, an endless expanse of dunes and scrub. The only sounds are the wind, whistling through the canyons, and the crunch of your own footsteps. In the distance, you see the telltale swirl of a sandstorm gathering strength."; Safe?: No; Monsters [Sand Worms]; Special Characters: []; Special Item: []; Special Condition: ["Heat Stroke" — Lose health when spending too much time in the desert.]
+NPC: [
+    Delirious Wanderer: (Knowledge: "Water... need... water...", "The sun... it burns... everything...", "Beware... the worms... they come from below..."; Objective: "Serve as a stark warning about the dangers of the desert, emphasizing the need for water and hinting at the presence of Sand Worms."; Default-Dialog: "Water... please...").
+].
+[Desert 2] : (n) mist; (s) [Desert 1]; (e) mist; (w) mist; Description: "The relentless sun beats down, baking the sand until it shimmers and dances in the heat.  The air is bone dry, each breath a struggle against the oppressive heat. The wind whips up sand, stinging your exposed skin and creating eerie, shifting patterns across the dunes. A lone vulture circles overhead, its shadow a fleeting darkness in this desolate landscape.  The only signs of life are the occasional bleached bones, picked clean by scavengers and bleached white by the relentless sun."; Safe?: No; Monsters [Scorpions]; Special Characters: []; Special Item: []; Special Condition: ["Blazing Sun" — Heat damage increases.]
+NPC: [
+    [Due to the extreme isolation of this desert location, encountering any NPCs here is highly unlikely.]
+].
+
+[Desert 3] : (n) [Desert 1]; (s) mist; (e) mist; (w) mist; Description: "The wind howls across the open expanse of Desert 3, whipping sand into a frenzy that stings your skin and obscures your vision.  The dunes here are taller, their crests shifting constantly in the wind. The remnants of what might have once been a caravan route snake across the landscape - broken wagon wheels, scattered supplies, and the bleached bones of those who succumbed to the unforgiving desert.  The silence is broken only by the howl of the wind and the occasional screech of a bird of prey, circling high above."; Safe?: No; Monsters [Bandits]; Special Characters: []; Special Item: []; Special Condition: ["Sandstorm" — Reduces visibility and makes it hard to move.]
+NPC: [
+    Bandit Lookout: (Knowledge: "Heh, looks like we got ourselves some fresh meat, boys! Spread the word - new targets approaching.  Let's relieve them of their burdens, shall we?", "The boss ain't gonna be happy if we come back empty-handed again. These dunes are picked clean!  We need to find some richer pickings.", "South?  That's where the real desert starts.  The kind of place that swallows you whole if you're not careful."; Objective: "Establish the presence of bandits and their predatory nature, hinting at their desperation and the increasing danger further south."; Default-Dialog: "Well, well, what do we have here?  Looks like your journey just got a whole lot shorter.").
+].
+
+[Canyon] : (n) [Canyon (Bandit Hideout)]; (s) [Desert 4]; (e) [Desert 1]; (w) [Desert 5]; Description: "The ground rumbles beneath your feet as you enter the canyon, the walls rising high above you, casting long shadows across the narrow path.  The air is cooler here, a welcome respite from the oppressive heat of the open desert, but a sense of unease hangs heavy in the air. The wind whistles through the canyons, creating mournful echoes that bounce off the rock face.   You spot the remnants of a campfire further down the path, the ashes still warm. Someone was here recently..."; Safe?: No; Monsters [Bandits]; Special Characters: []; Special Item: [Hidden Treasure]; Special Condition: ["Narrow Pathways" — Risk of falling off edges or being ambushed.]
+NPC: [
+    Nervous Merchant: (Knowledge: "Bandits!  They're everywhere in this cursed canyon!  They took everything I had...  ", "They're holed up in a hidden hideout further north.  Be careful, they're ruthless and well-armed.", "I'm heading south, back to the relative safety of the open desert. At least there, I can see them coming."; Objective: "Warn the player about the bandit threat in the canyon, revealing their hideout to the north and advising caution."; Default-Dialog: "Please, stay back!  I don't have anything left to steal!").
+].
+[Desert 4] : (n) [Canyon]; (s) mist; (e) mist; (w) mist; Description: "Desert 4 is a desolate expanse of cracked earth and wind-sculpted rock formations. The silence here is unnerving, broken only by the occasional groan of the wind as it carves new patterns in the sand.  The sun reflects harshly off the bleached bones that litter the ground, a stark reminder of the desert's unforgiving nature.  A fine layer of sand coats everything, and you get the feeling that even if you were to scream at the top of your lungs, your cries would be swallowed whole by the vast emptiness."; Safe?: No; Monsters [Sand Golems]; Special Characters: []; Special Item: []; Special Condition: ["Endless Horizon" — Harder to navigate.]
+NPC: [
+    [Due to the extremely harsh and desolate nature of Desert 4, encountering any NPCs here would be highly unusual.  The chances of survival in this unforgiving landscape are slim, making it a place to avoid rather than explore.]
+].
+
+[Canyon (Bandit Hideout)] : (n) [Canyon (Cliffside Monastery)]; (s) [Canyon]; (e) cliff walls; (w) cliff walls; Description: "A narrow crevice in the canyon wall, almost invisible unless you know what you're looking for, leads to the bandit hideout.  Crude torches light the way, casting flickering shadows on the rough-hewn walls.  The air is thick with the smell of stale sweat, cheap ale, and something else you'd rather not identify.  Rough laughter and the clinking of coins echo from deeper within, and you grip your weapon tighter, preparing for a fight."; Safe?: No; Monsters [Bandits, Bandit Chief]; Special Characters: []; Special Item: [Stolen Goods]; Special Condition: ["Booby Traps" — Risk of triggering traps and taking damage.]
+NPC: [
+    [Due to the secretive and dangerous nature of the Bandit Hideout, you are unlikely to encounter any friendly NPCs here.  Those who reside here are sworn to the Bandit Chief and pose a significant threat.]
+].
+
+[Canyon (Cliffside Monastery)] : (n) cliff walls; (s) [Canyon (Bandit Hideout)]; (e) cliff walls; (w) cliff walls; Description: "Carved into the face of a sheer cliff, the monastery stands in stark contrast to the harsh landscape surrounding it.  The path leading up is treacherous, a series of narrow ledges and rickety wooden bridges that cling precariously to the rock face.  The air grows noticeably cooler as you ascend, a gentle breeze carrying the faint scent of incense and something else you can't quite place—a sense of tranquility that seems at odds with the harshness of the canyon.  You reach a set of ornately carved doors, their surface worn smooth by time and the elements.  Faint chanting emanates from within."; Safe?: Yes; Monsters: [None]; Special Characters: [Old Monk]; Special Item: [Ancient Relic]; Special Condition: ["Spiritual Guidance" — The Old Monk can heal and restore health to those who seek his counsel.]
+NPC: [
+    Old Monk (Canyon): (Knowledge: "The path to peace is often fraught with peril, but the journey itself can be a form of meditation.", "The bandits below are lost souls, consumed by greed and fear.  Perhaps one day they will find their way back to the light.", "The desert holds many secrets, some buried deep beneath the sands, others whispered on the wind.  Listen carefully, and you may learn more than you expect."; Objective: "Guide the player towards inner peace and reflection, hinting at the potential for redemption for the bandits below and the secrets hidden within the desert."; Default-Dialog: "Welcome, traveler.  What brings you to this humble sanctuary?").
+].
+
+[Desert 5] : (n) mist; (s) mist; (e) [Canyon]; (w) [Large Route]; Description: "As you enter Desert 5, the sun dips below the horizon, painting the sky in hues of fiery orange and deep purple.  The temperature drops rapidly, a stark contrast to the searing heat of the day. A bone-chilling wind whistles through the canyons, carrying with it the scent of dust and something else... something ancient and primal. Strange, twisted shapes, formed by wind-eroded rock, loom out of the gathering darkness, their shadows stretching long and distorted in the fading light."; Safe?: No; Monsters [Night Stalkers]; Special Characters: []; Special Item: []; Special Condition: ["Chilling Winds" — Nighttime cold causes health loss.]
+NPC: [
+    Whispering Sands: (Knowledge: "This place...it remembers.  Ancient battles, forgotten empires, the rise and fall of civilizations.  The desert holds the echoes of the past, whispering them to those who listen.", "When the moon rises, the Night Stalkers emerge from their lairs.  Creatures of shadow, they hunt in the darkness, their eyes gleaming with an unnatural hunger.", "The path west leads to a place of power, a place where the veil between worlds is thin.  But be warned, traveler, not all power is meant for mortal hands."; Objective: "Impart a sense of the desert's ancient history and the dangers that lurk within it, hinting at the existence of the Night Stalkers and the powerful location to the west."; Default-Dialog: [The wind whispers through the canyons, carrying with it fragmented voices and the echoes of forgotten languages.  You strain to understand, but the whispers remain just out of reach.]).
+].
+
+[Large Route] : (n) mist; (s) mist; (e) [Desert 5]; (w) [Castle Entrance]; Description: "The Large Route cuts a straight path through the desert, a scar of civilization across the otherwise untamed landscape.  The remnants of ancient cobblestones peek through the shifting sands, worn smooth by centuries of wind and weather.  The path is littered with the debris of past travelers - broken wagon wheels, discarded supplies, and the occasional bleached skull, picked clean by scavengers. In the distance, looming against the horizon, you see the silhouette of a massive castle, its towers piercing the sky like the teeth of a predatory beast."; Safe?: No; Monsters [Night Stalkers]; Special Characters: []; Special Item: []; Special Condition: ["Long Journey" — Movement is slow due to the route's length.]
+NPC: [
+    Weary Traveler: (Knowledge: "This route... it seems to stretch on forever.  The castle in the distance, it's a beacon of hope, but also a reminder of the dangers that lie ahead.", "The Night Stalkers are drawn to this route, preying on those foolish enough to travel after dark.  Seek shelter before the moon rises.", "I've heard whispers of a hidden oasis somewhere off the main path.  A place of refuge, where water flows and life flourishes.  But finding it... that's another matter entirely."; Objective: "Express the exhaustion of the journey, warn of the Night Stalker threat at night, and hint at the possibility of a hidden oasis off the beaten path."; Default-Dialog: "Travel safe, friend.  And may you reach your destination before the darkness consumes you.").
+].
+
+[Castle Entrance] : (n) great wall; (s) great wall; (e) [Large Route]; (w) [Cerberus's Kennel]; Description: "The Large Route terminates at the foot of a massive wall, its surface crafted from dark, imposing stone. The gate is wrought iron, its surface twisted into the shapes of snarling beasts and writhing figures. It's clear that this is no ordinary castle; a palpable sense of dread emanates from the very stone itself.  Above the gate, carved in a language you don't recognize, is a single word:  *Beware*."; Safe?: No; Monsters [Guardians]; Special Characters: []; Special Item: []; Special Condition: [].
+NPC: [
+    [Due to the imposing nature of the Castle Entrance and the potential danger posed by the Evil King's forces, you are unlikely to encounter any friendly NPCs here. This is a place of power and malice, best approached with caution.]
+].
+
+[Cerberus's Kennel] : (n) [Graveyard]; (s) [Shadowy Thicket]; (e) [Castle Entrance]; (w) [Evil King's Castle]; Description: "The air crackles with the scent of sulfur and the sound of snarling.  Before you, nestled against the castle wall, is a cave entrance, its mouth framed by blackened bone and twisted metal.  Chains, thicker than a man's torso, lead into the darkness, their links taut with a barely restrained power.  From within the cave, you hear a low, guttural growl that seems to vibrate in your very bones.  This is the domain of Cerberus, the three-headed hound of legend, and it's clear that he's not expecting visitors."; Safe?: No; Monsters [Cerberus]; Special Characters: []; Special Item: [Cerberus Collar]; Special Condition: ["Guardian of the Gate" — Defeating Cerberus is required to proceed.]
+NPC: [
+    [The only NPC you are likely to encounter here is Cerberus himself.  His guttural growls and snarls serve as a warning to any who dare to enter his domain.  He is the guardian of the gate, and he will not allow passage easily.]
+].
+
+[Evil King's Castle] : (n) mist; (s) mist; (e) [Cerberus's Kennel]; (w) mist; Description: "The castle looms before you, a monument to darkness and despair.  The towers, crafted from black stone, pierce the sky, their spires adorned with grotesque gargoyles that leer down at you with malevolent glee. The air around the castle is heavy, charged with an oppressive energy that seems to weigh on your very soul. The gate, guarded by statues of skeletal warriors, is sealed shut, and an eerie silence hangs over the courtyard. This is the heart of the Evil King's domain, and the very air seems to whisper of the horrors that lie within."; Safe?: No; Monsters [Evil King (unique), Castle Guards]; Special Characters: [Evil King]; Special Item: [Evil King's Crown]; Special Condition: ["Locked Gate" — A special key is required to enter the castle, which can be found in the nearby cursed areas.]
+NPC: [
+    [Within the Evil King's Castle, you are unlikely to encounter any friendly NPCs. The castle is populated by the Evil King's loyal minions - Castle Guards, cursed creatures, and perhaps even the Evil King himself.  Danger lurks around every corner, and every encounter is a potential fight for survival.]
+].
+
+[Graveyard] : (n) [Crypt of Shadows]; (s) mist; (e) mist; (w) mist; Description: "The silence of the graveyard is broken only by the mournful sighing of the wind as it weaves through the weathered tombstones.  The air hangs heavy with the scent of decay and the faint, cloying sweetness of death.  The ground is uneven, riddled with sunken graves and crumbling mausoleums.  Wisps of fog drift between the headstones, clinging to the ground like restless spirits.  A chill creeps into your bones, and you feel a prickle of unease crawl up your spine.  This is a place where the veil between the worlds is thin, and the dead are never truly at rest."; Safe?: No; Monsters [Undead]; Special Characters: []; Special Item: [Necromancer's Staff]; Special Condition: ["Undead Rising" — Monsters continuously spawn in this area.]
+NPC: [
+    Restless Spirit (Graveyard): (Knowledge: "We wander, lost and forgotten, our souls bound to this desolate place.  Seek not solace here, for only sorrow awaits.", "The darkness beneath the graveyard... it hungers.  It feeds on the living and the dead alike.", "Beware the one who wields the staff of bone, for he commands the legions of the damned."; Objective: "Warn the player about the dangers of the graveyard, hinting at the existence of the Crypt of Shadows and the power of the Necromancer's Staff."; Default-Dialog: "Leave this place... while you still can...").
+].
+
+[Crypt of Shadows] : (n) mist; (s) [Graveyard]; (e) mist; (w) mist; Description: "A narrow, winding staircase, carved into the cold, damp earth, leads down into the heart of the Crypt of Shadows.  The air grows colder as you descend, and the faint scent of incense is replaced by the overwhelming stench of decay and something else… something ancient and evil.  Cobwebs, thick with dust, drape the walls, and the only light comes from the faint, sickly green glow emanating from the runes carved into the stone.  The silence here is oppressive, broken only by the drip, drip, drip of water seeping from the ceiling."; Safe?: No; Monsters [Undead, Liches]; Special Characters: []; Special Item: [Broken Key (lower part)]; Special Condition: ["Curse of the Dead" — Curse effects are stronger in this area.]
+NPC: [
+    Lich: (Knowledge: "Mortals dare to intrude upon my domain?  You are fools to venture into the darkness.  Your life force will fuel my power.", "The key you seek... it is but a fragment of a greater power.  A power that I will soon possess.", "The curse of the dead is upon this place.  You will not escape its grasp."; Objective: "Establish the Lich's dominance and power, revealing their interest in the Broken Key and the strength of the curse within the crypt."; Default-Dialog: "Your soul belongs to me now...").
+].
+
+[Shadowy Thicket] : (n) [Cerberus's Kennel]; (s) [Forbidden Forest]; (e) mist; (w) mist; Description: "The Shadowy Thicket is a place of twisted beauty, where nature itself seems to be corrupted by a malevolent force.  The trees twist and contort, their branches forming a tangled, thorny barrier against the outside world.  The air is thick with a cloying mist, and strange, bioluminescent fungi cast an eerie, green glow on the forest floor. The whispers of unseen creatures echo through the trees, sending shivers down your spine.  You get the feeling that you are being watched, hunted by eyes that you cannot see."; Safe?: No; Monsters [Cursed Wolves, Shadow Spirits]; Special Characters: []; Special Item: [Goblin's Treasure]; Special Condition: ["Cursed Whispers" — Prolonged exposure to the thicket drains health and sanity.]
+NPC: [
+    Distorted Reflection: (Knowledge:  "This thicket... it reflects the darkness within us all.  It shows us our fears, our doubts, our hidden desires.  Beware, traveler, for the thicket can twist your perceptions, make you question your very sanity.", "The wolves that stalk these woods are not like those of the natural world. They are twisted, corrupted by the darkness that pervades this place. Their bites carry a curse that eats away at the soul.", "Deeper within the thicket, the forest grows even darker.  The Forbidden Forest... a place where even the bravest souls fear to tread."; Objective: "Warn the player about the corrupting influence of the thicket, the nature of the Cursed Wolves, and the even greater danger that lies within the Forbidden Forest to the south."; Default-Dialog: ["Your reflection in a pool of stagnant water ripples and distorts, revealing a monstrous visage that stares back at you with mocking laughter."]).
+].
+
+[Forbidden Forest]: (n) [Shadowy Thicket]; (s) mist; (e) mist; (w) mist; Description: "Entering the Forbidden Forest is like stepping into a nightmare.  The trees are skeletal, their branches reaching up like grasping claws. The air is heavy, thick with an unnatural stillness that seems to suffocate any sound. The ground is soft and yielding, a carpet of decaying leaves and something else… something that feels wrong beneath your feet. The fog here is almost solid, a swirling mass of darkness that obscures your vision and plays tricks on your mind.  You are completely alone, swallowed whole by a silence so profound that it feels like a physical presence."; Safe?: No; Monsters [Shadow Spirits, Cursed Wolves]; Special Characters: []; Special Item: [Broken Key (upper part)]; Special Condition: ["Evil King's Curse" — All creatures in this area are empowered by the Evil King’s dark magic, making them more lethal.]
+NPC: [
+    [The Forbidden Forest is a place of utter desolation, corrupted by the Evil King's dark magic.  You are unlikely to encounter any friendly NPCs here, only twisted creatures and manifestations of the Evil King's power.  This is a place to be feared, a place to avoid if you value your sanity.]
+].
+
+---
+# 02Monsters.md
+
+[Goblin Warriors] : Health: 3; Chance of Encontering : 50%; Attack Abilities: [Sword Slash : [Swift and brutal strike with their swords, dealing 2 damage to the player,  Physical, None], Shield Bash : [A forceful push with their shield, dealing 1 damage and staggering the player, Physical, Stagger]]; Loot: [Goblin Dagger - 70%, Small Coin Purse - 30%]; Description: "Ruthless and cunning, Goblin Warriors are the frontline soldiers of the Goblin Tribe. They fight with crude but effective weapons, using their small size to their advantage in battle. Though not particularly strong individually, they are dangerous in groups, overwhelming their enemies with sheer numbers and chaotic tactics."; default-Dialog: ["Prepare for the wrath of the Goblin Tribe!", "Don't underestimate us, puny human!", "We'll crush you like ants!"]
+
+[Mountain Troll] : Health: 10; Chance of Encontering : 20%; Attack Abilities: [Crushing Blow : [A devastating strike with their massive club, dealing 4 damage, Physical, None], Stomp : [A powerful ground-shaking stomp, dealing 2 damage and knocking back the player, Physical, Knockback]]; Loot: [Troll Hide - 80%, Club - 20%]; Description: "Massive and slow, Mountain Trolls are known for their brute strength. They can take a tremendous amount of damage and deal devastating blows, making them formidable opponents."; default-Dialog: ["Get out of my mountain!", "You’ve woken the troll!", "I’ll crush you like a bug!"]
+
+[Snow Leopard] : Health: 5; Chance of Encontering : 30%; Attack Abilities: [Pounce : [A swift, deadly attack, dealing 3 damage and knocking down the player, Physical, Knockdown], Frost Bite : [A biting attack that inflicts a cold effect, dealing 1 damage over time, Physical, Frostbite]]; Loot: [Leopard Fur - 60%, Icy Claw - 40%]; Description: "Stealthy and agile, Snow Leopards are skilled hunters of the frozen peaks. Their frost-infused bite can cause lingering damage, and they are hard to spot before they strike."; default-Dialog: ["You’re in my territory, human!", "I’ll make you my dinner!", "The snow leopard reigns supreme!" ]
+
+[Forest Troll] : Health: 8; Chance of Encontering : 25%; Attack Abilities: [Tree Slam : [A powerful attack using a nearby tree as a weapon, dealing 3 damage, Physical, None], Regenerate : [The troll heals 1 health point per turn, only possible when in sunlight, Physical, Regenerate]]; Loot: [Troll Sap - 75%, Bark Armor - 25%]; Description: "A hulking creature that blends in with the dense forests, Forest Trolls have the ability to regenerate health if not quickly dispatched. They use the environment to their advantage in combat."; default-Dialog: ["You’ve disturbed my forest!", "I’ll make you regret coming here!", "This forest belongs to the trolls!" ]
+
+[Giant Spiders] : Health: 4; Chance of Encontering : 35%; Attack Abilities: [Web Trap : [Spins a sticky web that entangles the player, reducing movement speed for 1 turn, Physical, Web Trap], Poison Bite : [A venomous bite that inflicts poison, dealing 1 damage over time, Physical, Poison]]; Loot: [Spider Silk - 80%, Venom Gland - 20%]; Description: "Creeping silently through the forests and caves, Giant Spiders ambush their prey with web traps and deadly venom. They often travel in packs, making them even more dangerous."; default-Dialog: ["I’ve got you in my web!", "You’re my next meal!", "Don’t fear, you’ll be paralyzed soon!" ]
+
+[Goblins] : Health: 2; Chance of Encontering : 60%; Attack Abilities: [Dagger Stab : [A quick, weak stab with their daggers, dealing 1 damage, Physical, None], Throwing Rock : [Throws a rock at the player, dealing 1 damage, Physical, None]]; Loot: [Goblin Dagger - 70%, Small Coins - 30%]; Description: "Small and weak but quick and vicious, Goblins rely on swarming their enemies and using sneaky tactics. They often attack in groups, making them more dangerous than they seem."; default-Dialog: ["Run away, little human!", "We’re gonna get you!", "Prepare for the goblin horde!" ]
+
+[Goblin Warriors] : Health: 3; Chance of Encontering : 40%; Attack Abilities: [Sword Slash : [Swift and brutal strike with their swords, dealing 2 damage to the player,  Physical, None], Shield Bash : [A forceful push with their shield, dealing 1 damage and staggering the player, Physical, Stagger]]; Loot: [Goblin Dagger - 70%, Small Coin Purse - 30%]; Description: "Ruthless and cunning, Goblin Warriors are the frontline soldiers of the Goblin Tribe. They fight with crude but effective weapons, using their small size to their advantage in battle. Though not particularly strong individually, they are dangerous in groups, overwhelming their enemies with sheer numbers and chaotic tactics."; default-Dialog: ["Prepare for the wrath of the Goblin Tribe!", "Don't underestimate us, puny human!", "We'll crush you like ants!"]
+
+[Mud Serpent] : Health: 6; Chance of Encontering : 30%; Attack Abilities: [Constriction : [Wraps around the player, dealing 2 damage per turn, Physical, None], Mud Spit : [Spits a glob of mud that reduces vision for 1 turn, Physical, Mud Blind]]; Loot: [Serpent Scale - 60%, Venom Sac - 40%]; Description: "A massive serpent that slithers through the mud and swamps, its constricting body and mud projectiles make it a deadly predator in its habitat."; default-Dialog: ["You’re in my swamp, now!", "I’ll squeeze the life out of you!", "The mud is my domain!"]
+
+[Swamp Creatures] : Health: 5; Chance of Encontering : 45%; Attack Abilities: [Swamp Strike : [A foul, decaying strike that deals 2 damage, Physical, None], Disease Cloud : [Releases a cloud of disease that reduces health regeneration, Physical, Disease]]; Loot: [Swamp Moss - 70%, Rotten Bone - 30%]; Description: "These grotesque beings are made from the muck of the swamp. Their decaying bodies spread disease, and they strike with relentless ferocity to protect their foul territory."; default-Dialog: ["You’re gonna regret coming here!", "You’ll soon be as rotten as us!", "We’re the masters of the swamp!"]
+
+[Mud Golem] : Health: 8; Chance of Encontering : 15%; Attack Abilities: [Mud Smash : [A powerful, earth-shattering smash, dealing 3 damage, Physical, None], Absorb : [The golem absorbs a portion of the player’s attack, reducing its damage, Physical, Absorb]]; Loot: [Golem Core - 80%, Earth Essence - 20%]; Description: "Created from the living mud of the swamp, Mud Golems are slow but powerful, able to absorb and redirect attacks. They can withstand heavy punishment and grow stronger over time."; default-Dialog: ["You’ll not defeat me, mortal!", "I am the swamp’s guardian!", "The mud is my power!"]
+
+[Frog King] : Health: 12; Chance of Encontering : 10%; Attack Abilities: [Tongue Lash : [A quick and deadly strike with its long tongue, dealing 3 damage, Physical, None], Toxic Breath : [Breaths out a poisonous cloud that deals 1 damage over time, Physical, Poison]]; Loot: [Frog Crown - 90%, Royal Scepter - 10%]; Description: "The ruler of the swamps, the Frog King commands an army of lesser creatures. His toxic breath can poison entire groups, and his long tongue is used to snatch enemies from a distance."; default-Dialog: ["You’ve challenged the Frog King! You’ll regret it!", "Prepare to be poisoned!", "I am the king of the swamp!" ]
+
+[Witches] : Health: 5; Chance of Encontering : 20%; Attack Abilities: [Curse : [Casts a debilitating curse, dealing 1 damage per turn for 3 turns, Curse, Curse], Fireball : [Hurls a flaming ball of fire, dealing 3 damage, Fire, None]]; Loot: [Witch's Broom - 60%, Potion Ingredients - 40%]; Description: "Devious and malevolent, Witches use dark magic to curse their enemies or hurl powerful fireballs. They can be found casting spells in covens deep within the forests."; default-Dialog: ["You’ll pay for this, human!", "You’ve angered the witches!", "Beware the power of darkness!"]
+
+[Cursed Spirits] : Health: 4; Chance of Encontering : 30%; Attack Abilities: [Possess : [Attempts to possess the player, dealing 2 damage if successful and taking control for 1 turn, Curse, Possess], Shadow Strike : [A shadowy strike that deals 2 damage, Curse, None]]; Loot: [Ectoplasm - 70%, Cursed Relic - 30%]; Description: "Tormented souls bound to the mortal plane, Cursed Spirits are ethereal beings that can possess living creatures or strike from the shadows with malevolent force."; default-Dialog: ["I’ll haunt your dreams!", "You’ll never escape me!", "The curse is strong within me!"]
+
+[Slimes] : Health: 3; Chance of Encontering : 50%; Attack Abilities: [Acidic Touch : [A corrosive touch that deals 1 damage, Acid, None], Split : [Splits into two smaller slimes, Physical, Split]]; Loot: [Slime Core - 60%, Acid Residue - 40%]; Description: "Amorphous creatures that dissolve everything in their path, Slimes can split into smaller versions of themselves when struck, making them hard to kill completely."; default-Dialog: ["I’m gonna melt you!", "Don’t touch me!", "I’ll consume you whole!"]
+
+[Pirates] : Health: 4; Chance of Encontering : 40%; Attack Abilities: [Cutlass Slash : [A quick and deadly swing of their cutlass, dealing 2 damage, Physical, None], Pistol Shot : [A powerful shot from their pistol, dealing 3 damage, Physical, None]]; Loot: [Pirate Hat - 60%, Gold Coins - 40%]; Description: "Savage and greedy, Pirates plunder coastal villages and ships. Their fighting style is quick and dirty, using cutlasses and pistols to overpower their enemies."; default-Dialog: ["Arrr, ye be a landlubber!", "Prepare to walk the plank!", "Give us your gold, or face the wrath of the sea!" ]
+
+[Pirate Captain] : Health: 7; Chance of Encontering : 10%; Attack Abilities: [Captain's Cutlass : [A deadly slash from his captain's cutlass, dealing 4 damage, Physical, None], Command Shout : [A rallying cry that boosts the morale of nearby pirates, Physical, None]]; Loot: [Captain's Hat - 80%, Treasure Map - 20%]; Description: "The leader of the pirates, the Pirate Captain is stronger and smarter than the rest. His presence on the battlefield boosts the morale of his crew, making them even more dangerous."; default-Dialog: ["Arrr, ye be no match for me!", "I'll take your treasure, and ye can have the sea!", "Prepare for the wrath of the Pirate Captain!"]
+
+[Sand Worms] : Health: 8; Chance of Encontering : 25%; Attack Abilities: [Burrow : [Buries itself underground, making it harder to target, Physical, Burrow], Devour : [Attempts to swallow the player whole, dealing 4 damage if successful, Physical, Devour]]; Loot: [Worm Tooth - 70%, Desert Stone - 30%]; Description: "Gigantic creatures that tunnel through the sand, Sand Worms strike without warning. They can swallow enemies whole and disappear beneath the dunes in an instant."; default-Dialog: ["You’re my next meal!", "The desert is my home!", "Beware the Sand Worm!" ]
+
+[Scorpions] : Health: 4; Chance of Encontering : 30%; Attack Abilities: [Stinger Strike : [A venomous strike with its stinger, dealing 3 damage and inflicting poison, Physical, Poison], Claw Crush : [A powerful crush with its claws, dealing 2 damage, Physical, None]]; Loot: [Scorpion Venom - 70%, Carapace - 30%]; Description: "Lurking beneath the desert sands, Scorpions use their venomous sting to paralyze and kill. Their thick carapace makes them difficult to damage."; default-Dialog: ["I’ll sting you good!", "Don’t mess with me!", "The desert is my domain!" ]
+
+[Bandits] : Health: 3; Chance of Encontering : 45%; Attack Abilities: [Dagger Slash : [A swift strike with their daggers, dealing 2 damage, Physical, None], Sneak Attack : [A surprise attack that deals 3 damage, Physical, None]]; Loot: [Bandit's Loot - 65%, Coins - 35%]; Description: "Ruthless thieves that prey on travelers, Bandits strike from the shadows and steal anything of value. They are quick and prefer to avoid prolonged combat."; default-Dialog: ["Your gold or your life!", "We’ll take everything you have!", "Run away, little human!" ]
+
+[Sand Golems] : Health: 9; Chance of Encontering : 15%; Attack Abilities: [Sandstorm : [Creates a blinding sandstorm that reduces vision for 1 turn, Physical, Sandstorm], Crushing Fist : [A powerful fist attack that deals 4 damage, Physical, None]]; Loot: [Golem Core - 80%, Sandstone - 20%]; Description: "Formed from the desert sands, Sand Golems are large, powerful creatures with the ability to create sandstorms that disorient and blind their enemies."; default-Dialog: ["I am the desert’s protector!", "You’ll never escape the sandstorm!", "The sand is my power!"]
+
+[Night Stalkers] : Health: 5; Chance of Encontering : 20%; Attack Abilities: [Shadow Ambush : [A surprise attack from the shadows, dealing 3 damage, Physical, None], Silent Strike : [A deadly, silent strike that deals 4 damage, Physical, None]]; Loot: [Shadow Essence - 75%, Dark Cloak - 25%]; Description: "Stealthy assassins that hunt in the night, Night Stalkers use the darkness to their advantage. Their silent attacks leave enemies dead before they can react."; default-Dialog: ["You’re dead to me!", "The darkness is my friend!", "No one escapes the Night Stalker!" ]
+
+[Guardians] : Health: 7; Chance of Encontering : 20%; Attack Abilities: [Shield Bash : [A forceful bash with their shield, dealing 2 damage and stunning the player, Physical, Stun], Guardian Strike : [A powerful strike with their sword, dealing 3 damage, Physical, None]]; Loot: [Guardian Armor - 60%, Key - 40%]; Description: "Ancient warriors tasked with protecting sacred sites, Guardians are heavily armored and defend their territory with unwavering resolve."; default-Dialog: ["This place is sacred, leave!", "You will not pass!", "I will defend this place with my life!" ]
+
+[Cerberus] : Health: 15; Chance of Encontering : 5%; Attack Abilities: [Flame Breath : [A fiery breath attack that deals 4 damage to all nearby enemies, Fire, Burn], Multi-Headed Bite : [Each of Cerberus's three heads attacks separately, dealing 2 damage per head, Physical, None]]; Loot: [Cerberus Collar - 80%, Hellfire Stone - 20%]; Description: "The monstrous three-headed guardian of the underworld, Cerberus is a fierce and relentless opponent. Each head strikes independently, and its fiery breath can incinerate foes."; default-Dialog: ["You’re in hell now!", "Face my fury!", "I’ll tear you apart!" ]
+
+[Undead] : Health: 4; Chance of Encontering : 35%; Attack Abilities: [Rotten Claw : [A decaying strike that deals 1 damage and inflicts disease, Physical, Disease], Bone Crunch : [A crushing attack that deals 2 damage, Physical, None]]; Loot: [Bone Fragments - 60%, Undead Relic - 40%]; Description: "Animated corpses that wander the land, the Undead attack with decayed limbs and broken weapons. They are slow but relentless in their pursuit of the living."; default-Dialog: ["Brains... I need brains!", "I’ll never rest!", "You’re next!" ]
+
+[Liches] : Health: 10; Chance of Encontering : 10%; Attack Abilities: [Necrotic Blast : [A blast of dark energy that deals 3 damage and weakens the player, Curse, Weaken], Summon Undead : [Summons 2 undead minions to fight alongside the lich, Curse, None]]; Loot: [Lich's Phylactery - 85%, Dark Tome - 15%]; Description: "Powerful necromancers who have achieved immortality, Liches command legions of undead. They use dark magic to drain life from their enemies and summon more undead minions."; default-Dialog: ["Your life force will be mine!", "I’ll bring death to this world!", "Prepare to face the Lich!" ]
+
+[Cursed Wolves] : Health: 4; Chance of Encontering : 35%; Attack Abilities: [Cursed Bite : [A venomous bite that deals 2 damage and inflicts a debilitating curse, Curse, Curse], Pack Howl : [Howls to attract more cursed wolves, Curse, None]]; Loot: [Wolf Pelt - 70%, Cursed Fang - 30%]; Description: "Twisted by dark magic, Cursed Wolves are vicious and relentless hunters. Their cursed bite spreads a debilitating sickness to those unlucky enough to survive the attack."; default-Dialog: ["You’ll be my next victim!", "We’ll tear you apart!", "Beware the curse of the wolves!" ]
+
+[Shadow Spirits] : Health: 5; Chance of Encontering : 25%; Attack Abilities: [Phantom Strike : [A shadowy strike that deals 3 damage and has a chance to evade the player's defenses, Curse, None], Possession : [Attempts to possess the player, dealing 2 damage if successful and taking control for 1 turn, Curse, Possess]]; Loot: [Shadow Core - 70%, Spectral Cloak - 30%]; Description: "Ethereal beings made of pure shadow, Shadow Spirits can phase through walls and possess their enemies. Their strikes are quick and almost impossible to avoid."; default-Dialog: ["You’re in the shadow realm now!", "I’ll steal your life force!", "Beware the shadow spirits!" ]
+
+[Evil King] : Health: 20; Chance of Encontering : 10%; Attack Abilities: [Dark Magic : [Casts a powerful dark spell, dealing 5 damage and inflicting a curse, Curse, Curse], Royal Command : [Orders nearby cursed creatures to attack, Curse, None]]; Loot: [Evil King's Crown - 90%, Scepter of Shadows - 10%]; Description: "The ruler of all that is dark and twisted, the Evil King is a powerful sorcerer who commands legions of cursed creatures. His very presence corrupts the land, making him one of the most feared enemies."; default-Dialog: ["Kneel before your king!", "I am the darkness!", "You’ll never defeat me!" ]
+
+[Castle Guards] : Health: 6; Chance of Encontering : 40%; Attack Abilities: [Halberd Slash : [A powerful swing with their halberds, dealing 3 damage, Physical, None], Shield Wall : [Forms an impenetrable wall with other castle guards, reducing incoming damage by 50%, Physical, Shield Wall]]; Loot: [Castle Armor - 70%]; Description: "Elite soldiers loyal to the Evil King, Castle Guards are heavily armored and well-trained in defensive tactics."; default-Dialog: ["You’ll not get past us!", "The Evil King’s might is with us!", "Prepare for the castle guards!" ]
+
+---
+# 03Loots.md
+
+[Troll Hide]: Description: "Torn from the hulking frame of a Mountain Troll, this hide is thick, leathery, and surprisingly tough. The coarse fur is matted with dirt and grime from the mountains, but beneath it all, you can feel the strength of the beast it once belonged to. It would make a fine addition to any armor, providing exceptional durability."; Worth: 50 gold; Type: Armor; Affects: ["Increased Durability", "Toughness Boost"].
+
+[Club]: Description: "More a felled tree trunk than a refined weapon, this crude club is dented and scarred from countless blows. Splintered wood and the lingering scent of troll sweat cling to its surface. Despite its crude appearance, the sheer weight of the club promises devastating impact."; Worth: 15 silver; Type: Weapon; Affects: ["Crushing Blow"].
+
+[Leopard Fur]: Description: "As pure as freshly fallen snow, this pelt belonged to a Snow Leopard. Soft and luxurious to the touch, the fur is thick and warm, promising comfort even in the harshest blizzards. The intricate patterns of the leopard's spots are mesmerizing, making it a prized possession for any collector."; Worth: 75 gold; Type: Resource.
+
+[Icy Claw]: Description: "This claw, once belonging to a Snow Leopard, is now a solid shard of ice, pulsing with a faint blue light. The air around it is noticeably colder, and you can feel a tingling sensation just by holding it. It seems to emanate a magical frost, hinting at its potential for enchantment."; Worth: 40 gold; Type: Relic; Affects: ["Frostbite Attack"].
+
+[Troll Sap]: Description: "This viscous, green sap drips from the wounds of a Forest Troll, carrying a faint, earthy aroma. Though unpleasant to the touch, the sap seems to pulsate with a strange energy, hinting at its regenerative properties. It would likely be a potent ingredient for healing potions."; Worth: 60 gold; Type: Potion; Affects: ["Health Regeneration"].
+
+[Bark Armor]: Description: "Pieces of bark, hardened and shaped to form crude armor, are held together by thick vines. This armor, likely worn by a Forest Troll, smells strongly of earth and moss. While not the most protective, it provides excellent camouflage in wooded environments."; Worth: 25 gold; Type: Armor; Affects: ["Camouflage", "Stealth"].
+
+[Spider Silk]: Description: "Collected from the webs of Giant Spiders, this silk is surprisingly strong and lightweight. It shines with an otherworldly sheen in the light, its delicate strands surprisingly tough and resilient. This versatile material could have various crafting applications."; Worth: 30 gold; Type: Resource.
+
+[Venom Gland]: Description: "This pulsing sac, taken from a Giant Spider, is filled with a deadly venom. A sickly green liquid swirls within, emitting a foul odor. Handling it with extreme caution is recommended, but it's a valuable ingredient for crafting potent toxins."; Worth: 45 gold; Type: Potion; Affects: ["Poison Strike"].
+
+[Goblin Dagger]: Description: "This crudely made dagger is more rust than steel, clearly having seen better days. It's small and lightweight, designed for quick jabs rather than powerful swings. Despite its shoddy craftsmanship, it's sharp enough to inflict damage in the right (or wrong) hands."; Worth: 5 silver; Type: Weapon; Affects: ["Quick Jab"].
+
+[Small Coins]: Description: "A handful of loose coins, mostly copper with a few silver pieces mixed in. They're worn smooth from years of circulation, and some bear the markings of long-forgotten kingdoms."; Worth: 2 silver; Type: Resource.
+
+[Small Coin Purse]: Description: "This small, leather pouch jingles with the sound of coins inside. It's plain and worn, likely belonging to a traveler or a petty thief. The contents might hold anything from a few copper coins to a small fortune."; Worth: 5 silver; Type: Resource.
+
+[Serpent Scale]: Description: "Covered in a thick layer of mud and grime, this scale from a Mud Serpent is surprisingly tough and resistant to damage. The mud seems baked onto the surface, creating a natural camouflage in swampy environments."; Worth: 20 gold; Type: Armor; Affects: ["Mud Resistance"].
+
+[Venom Sac]: Description: "This pulsing sac, ripped from a Mud Serpent, is filled with a thick, viscous venom. It emits a pungent, almost sweet odor that stings the nostrils. It requires careful handling, but could be useful for alchemy."; Worth: 35 gold; Type: Potion; Affects: ["Venomous Attack"].
+
+[Swamp Moss]: Description: "This clump of moss, gathered from the depths of the swamp, glows with a faint, ethereal light. Unlike normal moss, it feels strangely warm to the touch, and a faint humming sound seems to emanate from it. It's rumored to have magical properties and is highly sought after by alchemists."; Worth: 15 gold; Type: Resource.
+
+[Rotten Bone]: Description: "This bone, likely belonging to a Swamp Creature, is blackened with decay and emits a foul odor. It crumbles slightly at your touch, and a strange energy seems to crackle around it. It's best handled with caution, as it could be infused with dark magic."; Worth: 10 gold; Type: Relic; Affects: ["Necromantic Power"].
+
+[Golem Core]: Description: "This pulsating core, ripped from the heart of a Mud Golem, crackles with raw, earthen energy. It seems to hum with a life force of its own, even though the golem it once animated is gone. It's a valuable component for enchanting and imbuing items with earth magic."; Worth: 100 gold; Type: Relic; Affects: ["Golem Strength"].
+
+[Earth Essence]: Description: "This vial contains a swirling mass of pure, earthen energy, captured from the heart of a Mud Golem. The essence shimmers with a deep, earthy brown light, and you can feel its power thrumming within the glass. It's a potent ingredient for earth-based spells and enchantments."; Worth: 45 gold; Type: Potion; Affects: ["Earthquake"].
+
+[Frog King's Crown]: Description: "This crown, once belonging to the dreaded Frog King, is crafted from twisted swamp reeds and adorned with glistening, jewel-toned insect carapaces. It’s surprisingly heavy and resonates with a humid energy, a testament to its origins in the deepest, darkest swamps.";  Worth: 200 gold;  Type: Relic;  Affects: ["Swamp Sovereignty"].
+
+[Royal Scepter]: Description: "This scepter, once wielded by the Frog King himself, is crafted from a gnarled branch of a long-submerged swamp willow. It's surprisingly lightweight, and a faint green luminescence emanates from the crudely carved frog head that serves as its pommel. It seems to hum with primal magic, a testament to the Frog King's power."; Worth: 150 gold;  Type: Weapon;  Affects: ["Royal Command"].
+
+[Witch's Broom]: Description: "This broom is crafted from a gnarled branch of some unknown, thorny tree, its bristles a tangled mess of twigs and leaves. Despite its crude appearance, it vibrates with an almost imperceptible magical energy.  The faint scent of woodsmoke and strange herbs clings to it, hinting at its enchanted nature."; Worth: 80 gold;  Type: Relic;  Affects: ["Flight"].
+
+[Potion Ingredients]: Description: "This collection of ingredients is a hodgepodge of strange and exotic components. Dried herbs, glowing mushrooms, and strangely textured animal parts are all jumbled together, emanating a potent aroma that's both alluring and repulsive."; Worth: 25 gold; Type: Resource.
+
+[Ectoplasm]: Description: "This ethereal substance shimmers with an otherworldly, bluish-green light. It's surprisingly cold to the touch, and it seems to writhe and shift in your hand as if trying to escape. A faint, chilling whisper seems to emanate from it, barely audible above the background noise."; Worth: 40 gold; Type: Relic; Affects: ["Spirit Communication"].
+
+[Cursed Relic]: Description: "This relic pulsates with a dark, malevolent energy. You feel an unsettling chill crawl down your spine just by looking at it. It could be anything – a small statuette, a piece of jewelry, or even a fragment of bone – but its purpose is clearly malevolent."; Worth: 65 gold; Type: Relic; Affects: ["Cursed Aura"].
+
+[Slime Core]: Description: "This gelatinous core, extracted from a Slime, pulsates with a strange energy. It's surprisingly warm and vibrates slightly in your hand. It seems to contain a concentrated form of the Slime's essence, which could be useful in alchemy."; Worth: 30 gold; Type: Potion; Affects: ["Sticky Attack"].
+
+[Acid Residue]: Description: "This vial contains a bubbling, corrosive liquid, the remnants of a Slime's acidic touch. It sizzles and pops ominously, eating away at the cork stopper. It should be handled with extreme caution, but it could be a potent weapon in the right hands."; Worth: 20 gold; Type: Resource.
+
+[Pirate Hat]: Description: "This worn, leather tricorne hat has seen better days. Salt stains and frayed edges tell tales of seafaring adventures. While not particularly valuable, it could be a fun accessory for anyone looking to embrace their inner pirate."; Worth: 3 silver; Type: Armor; Affects: ["Pirate's Luck"].
+
+[Gold Coins]: Description: "This small pouch spills open, revealing a collection of gleaming gold coins. Each coin is stamped with the insignia of a different kingdom or pirate crew, likely plundered from unfortunate travelers and merchants."; Worth: 25 gold; Type: Resource.
+
+[Captain's Hat]: Description: "This flamboyant bicorne hat is adorned with a tarnished gold braid and a single, weather-beaten feather. The leather is supple and well-maintained, speaking to the Captain's vanity. Wearing it might imbue you with a sense of authority, for better or worse."; Worth: 45 gold; Type: Armor; Affects: ["Command Presence"].
+
+[Treasure Map]: Description: "This aged map, smelling faintly of saltwater and rum, depicts a crudely drawn island with markings indicating a hidden treasure. Though difficult to decipher, the map promises adventure and potential riches to anyone brave enough to follow it."; Worth: 100 gold; Type: Relic; Affects: ["Treasure Hunter"].
+
+[Worm Tooth]: Description: "This massive tooth, longer than your forearm, once belonged to a Sand Worm. It's heavier than it looks and surprisingly sharp, with serrated edges that speak to the creature's ferocity. It would make a fearsome weapon or a valuable trophy for any hunter."; Worth: 85 gold; Type: Resource.
+
+[Desert Stone]: Description: "Found within the belly of a slain Sand Worm, this stone shimmers with an internal heat. It seems to absorb the surrounding light, leaving a cool sensation on your skin when held. It's said to possess mystical properties connected to the desert itself."; Worth: 50 gold; Type: Relic; Affects: ["Desert Resilience"].
+
+[Scorpion Venom]: Description: "This vial contains a thick, viscous liquid that glows with a sickly green light. It's the extracted venom of a Desert Scorpion, deadly to most creatures. It should be handled with extreme caution, but it could be valuable for crafting poisons or antidotes."; Worth: 55 gold; Type: Potion; Affects: ["Poison Weaponry"].
+
+[Carapace]: Description: "This hardened shell, once belonging to a Desert Scorpion, is surprisingly lightweight yet incredibly durable. It shows signs of numerous battles, with scratches and dents covering its surface. It would offer decent protection if incorporated into armor."; Worth: 35 gold; Type: Armor; Affects: ["High Defense"].
+
+[Bandit's Loot]: Description: "This collection of stolen goods consists of various trinkets and valuables. You find a silver locket with a faded portrait inside, a handful of foreign coins, and a small, jeweled dagger, likely belonging to some unfortunate noble."; Worth: 15 gold; Type: Resource.
+
+[Shadow Essence]: Description: "This vial contains a swirling mass of pure shadow, captured from a Night Stalker. It's colder than ice to the touch, and a sense of dread seems to emanate from it. It's a potent ingredient for shadow magic, but handle it with care – darkness has a way of corrupting even the purest of hearts."; Worth: 70 gold; Type: Relic; Affects: ["Shadow Veil"].
+
+[Dark Cloak]: Description: "This cloak, seemingly woven from shadows themselves, feels cool and weightless against your skin. It absorbs the surrounding light, making you blend seamlessly into the darkness. It's perfect for anyone who prefers to operate unseen, whether for stealthy missions or more nefarious purposes."; Worth: 60 gold; Type: Armor; Affects: ["Enhanced Stealth"].
+
+[Guardian Armor]: Description: "This ancient armor, likely belonging to a fallen Guardian, is crafted from a strange, lightweight metal that seems to shimmer with an internal light. Despite its age, the armor is in remarkably good condition, its intricate designs depicting scenes of forgotten battles and heroic deeds."; Worth: 120 gold; Type: Armor; Affects: ["Damage Resistance"].
+
+[Key]: Description: "This heavy, ornate key is made of a dark metal that seems to absorb the surrounding light. Intricate carvings adorn its surface, depicting symbols and creatures that you don't recognize. It's clearly very old and feels significant, likely unlocking something important, though what that might be remains a mystery."; Worth: 50 gold; Type: Relic.
+
+[Cerberus Collar]: Description: "This heavy collar, forged in the fires of the underworld, is adorned with three snarling dog heads, each one spewing forth a miniature inferno. The air around it shimmers with heat, and you can feel its power thrumming even through your gloves. It's a relic of immense power, not to be worn lightly."; Worth: 250 gold; Type: Relic; Affects: ["Hellfire Protection"].
+
+[Hellfire Stone]: Description: "This stone pulsates with the heat of a thousand suns, its surface constantly flickering with miniature flames. Even holding it for a moment causes your hand to sweat, but the warmth is strangely comforting. It's a powerful relic, capable of unleashing fiery destruction upon your enemies."; Worth: 200 gold; Type: Relic; Affects: ["Fireball Spell"].
+
+[Bone Fragments]: Description: "These bone fragments are all that remain of some unfortunate soul, long since departed. They're brittle and dry, crumbling slightly at your touch. Despite their decayed state, they still radiate a faint, unsettling energy. They might hold some value for those who practice necromancy."; Worth: 5 gold; Type: Resource.
+
+[Undead Relic]: Description: "This relic, cold and lifeless to the touch, pulses with the energy of the undead. It could be anything - a chipped bone amulet, a tarnished silver ring, or even a scrap of cloth - but its purpose is clear. It's a tool for manipulating the dead, for summoning their power, or perhaps even for binding them to your will."; Worth: 45 gold; Type: Relic; Affects: ["Raise Dead"].
+
+[Lich's Phylactery]: Description: "This small, unassuming object – perhaps a carved stone, a sealed locket, or even a preserved organ – pulsates with a dark, unnatural energy. It's the Lich's phylactery, the vessel containing their soul and the source of their immortality. Destroying it is the only way to truly end a Lich's reign of terror."; Worth: 500 gold; Type: Relic; Affects: ["Immortality"].
+
+[Dark Tome]: Description: "Bound in what looks like human skin, this tome is filled with arcane symbols and chilling illustrations. A palpable aura of evil surrounds the book, and you can feel your stomach churn just by looking at it. The pages whisper with forbidden knowledge, tempting you with power at a terrible cost."; Worth: 150 gold; Type: Relic; Affects: ["Dark Magic"].
+
+[Wolf Pelt]: Description: "This pelt, taken from a Cursed Wolf, is surprisingly warm, though the fur stands on end, as if still infused with the beast's feral energy. The eyes, sewn shut with a thick thread, seem to follow your every move.  A faint growl emanates from deep within the fur, sending chills down your spine."; Worth: 40 gold; Type: Armor; Affects: ["Curse Resistance"].
+
+[Cursed Fang]: Description: "This fang, once belonging to a Cursed Wolf, pulsates with a dark, malevolent energy. It's surprisingly heavy for its size and radiates a faint heat. It's an object of dark power, capable of inflicting terrible curses upon your enemies."; Worth: 35 gold; Type: Relic; Affects: ["Curse Attack"].
+
+[Shadow Core]: Description: "This core, seemingly formed from solidified darkness, throbs with a chilling energy. It's cold to the touch, almost painfully so, and a faint whisper seems to emanate from within its depths. It's an object of immense power, capable of granting the user control over shadows themselves."; Worth: 90 gold; Type: Relic; Affects: ["Shadow Step"].
+
+[Spectral Cloak]: Description: "This cloak shimmers with an ethereal, almost invisible light. When you touch it, your hand seems to pass right through, sending shivers down your spine. It's woven from the very essence of shadows, making the wearer partially invisible to the naked eye. Moving with the cloak, you feel a strange lightness, as if walking on air."; Worth: 120 gold; Type: Armor; Affects: ["Invisibility"].
+
+[Evil King's Crown]: Description: "This crown, heavy with dark magic, seems to suck the light from the room. It's crafted from a black metal that's cold to the touch, and each of its sharp, pointed spikes is tipped with a gemstone that glows with a malevolent inner light. Power practically radiates from this artifact, a symbol of the Evil King’s tyranny."; Worth: 1000 gold; Type: Relic; Affects: ["Dark Dominion"].
+
+[Scepter of Shadows]: Description: "This scepter is crafted from a strange, black wood that seems to absorb the surrounding light. It's topped with a crystal that swirls with an inky blackness, and you can almost feel the malevolent energy thrumming through its core. It's a weapon of terrible power, capable of unleashing devastating shadow magic upon your enemies."; Worth: 750 gold; Type: Weapon; Affects: ["Shadow Blast", "Dark Shield"].
+
+[Castle Armor]: Description: "This armor, crafted from polished steel plates, is etched with intricate designs depicting scenes of war and conquest. It's clear that this armor was worn by an elite warrior, someone who instilled fear in the hearts of their enemies. It's surprisingly lightweight yet incredibly durable, offering superior protection in battle."; Worth: 100 gold; Type: Armor; Affects: ["Increased Defense", "Guard's Endurance"].
+
+[Goblin's Treasure]: Description: "Hidden beneath the tangled roots of a gnarled tree, you find a sturdy wooden chest, bound with iron and secured with a heavy lock. The air around it smells faintly of mildew and something pungent, like unwashed goblin.  Prying it open with your sword, you discover a treasure trove of gold and jewels, likely accumulated from years of thievery and raiding."; Usage: "Open to get 1000 Gold"
+
+---
+# 04Black Smith Craftable.md
+
+
+
+WEAPONS:
+
+[Venom Blade]: Loot Needed: [Goblin Dagger, Venom Gland, Scorpion Venom]; Affects: ["Poison DoT", "Armor Pierce"]; Description: A deadly dagger that inflicts lasting poison damage, crafted by combining the crude effectiveness of goblin weaponry with potent venoms; Worth: 200 gold
+
+[Shadowstrike Bow]: Loot Needed: [Spider Silk, Shadow Essence, Dark Cloak]; Affects: ["Stealth Shot", "Shadow Arrow"]; Description: A silent bow that fires arrows infused with shadow magic, perfect for stealth attacks; Worth: 350 gold
+
+[Hellfire Mace]: Loot Needed: [Club, Hellfire Stone, Cerberus Collar]; Affects: ["Fire Damage", "Burning DoT", "Knockback"]; Description: A devastating mace that burns with eternal hellfire, each strike has a chance to ignite enemies; Worth: 500 gold
+
+[Cursed Warblade]: Loot Needed: [Cursed Fang, Undead Relic, Dark Tome]; Affects: ["Life Drain", "Curse Strike"]; Description: A sword that drains life force and can inflict deadly curses on enemies; Worth: 450 gold
+
+ARMOR:
+
+[Forest Guardian's Plate]: Loot Needed: [Troll Hide, Bark Armor, Guardian Armor]; Affects: ["Nature Resistance", "Regeneration"]; Description: Heavy armor that provides exceptional protection and slowly regenerates health in forested areas; Worth: 600 gold
+
+[Shadow Infiltrator Set]: Loot Needed: [Spectral Cloak, Dark Cloak, Spider Silk]; Affects: ["Stealth Boost", "Shadow Walk"]; Description: Light armor that enhances stealth abilities and allows brief invisibility in shadows; Worth: 450 gold
+
+[Desert Wanderer's Mail]: Loot Needed: [Carapace, Sand Worm Tooth, Sandstone]; Affects: ["Heat Resistance", "Sand Shield"]; Description: Medium armor perfectly suited for desert exploration, providing protection against both heat and sandstorms; Worth: 400 gold
+
+[Cursed Battleplate]: Loot Needed: [Castle Armor, Bone Fragments, Cursed Relic]; Affects: ["Magic Resistance", "Death Touch"]; Description: Dark-infused armor that provides protection against magic and can harm attackers; Worth: 550 gold
+
+---
+# 05Potion Craftable.md
+
+POTIONS:
+
+[Greater Healing Elixir]: Loot Needed: [Troll Sap, Swamp Moss, Earth Essence]; Affects: ["Major Healing", "Regeneration Boost"]; Description: A powerful healing potion that provides both instant healing and temporary regeneration; Worth: 150 gold
+
+[Venom Master's Brew]: Loot Needed: [Venom Sac, Scorpion Venom, Acid Residue]; Affects: ["Weapon Coating", "Poison Resistance"]; Description: A dual-purpose potion that can either coat weapons with poison or provide poison resistance; Worth: 200 gold
+
+[Shadow Walker's Draught]: Loot Needed: [Shadow Core, Ectoplasm, Dark Cloak]; Affects: ["Invisibility", "Shadow Form"]; Description: Grants temporary invisibility and the ability to pass through shadows; Worth: 250 gold
+
+[Berserker's Rage]: Loot Needed: [Cursed Wolf Fang, Rotten Bone, Hellfire Stone]; Affects: ["Damage Boost", "Frenzy"]; Description: Dramatically increases damage output but reduces defense, causing the user to enter a frenzied state; Worth: 180 gold
+
+[Golem's Fortitude]: Loot Needed: [Golem Core, Guardian Armor, Troll Hide]; Affects: ["Damage Reduction", "Strength Boost"]; Description: Significantly increases physical defense and strength for a limited time; Worth: 220 gold
+
+[Witch's Insight]: Loot Needed: [Potion Ingredients, Dark Tome, Lich's Phylactery]; Affects: ["Magic Power", "Mana Regeneration"]; Description: Enhances magical abilities and accelerates mana regeneration; Worth: 300 gold
+
+[Arctic Predator's Elixir]: Loot Needed: [Icy Claw, Leopard Fur, Wolf Pelt]; Affects: ["Frost Power", "Speed Boost"]; Description: Grants resistance to cold and enhances speed in snowy conditions; Worth: 175 gold
+
+[Swamp King's Brew]: Loot Needed: [Royal Scepter, Frog Crown, Swamp Moss]; Affects: ["Water Breathing", "Poison Cloud"]; Description: Allows underwater breathing and the ability to emit toxic clouds; Worth: 400 gold
+
+[Greater Healing Elixir] Loot Needed: [Troll Sap, Swamp Moss, Potion Ingredients] Affects: ["Major Healing", "Regeneration Boost"] Description: A powerful healing potion that combines the regenerative properties of Troll Sap with the magical properties of Swamp Moss, enhanced by rare herbs. Provides both immediate healing and ongoing regeneration. Worth: 145 gold
+
+[Venom Burst Potion] Loot Needed: [Venom Gland, Scorpion Venom, Acid Residue] Affects: ["High Damage", "Corrosive Effect"] Description: A devastating offensive potion that combines multiple sources of venom and acid, creating a powerful burst of corrosive damage on impact. Worth: 160 gold
+
+[Swift Shadow Brew] Loot Needed: [Shadow Essence, Spider Silk, Ectoplasm] Affects: ["Movement Speed", "Shadow Step"] Description: A mysterious potion that grants incredible speed by infusing the drinker with shadow essence, allowing them to move swiftly through the shadows. Worth: 175 gold
+
+[Basic Healing Mixture] Loot Needed: [Slime Core, Troll Sap] Affects: ["Minor Healing", "Short Regeneration"] Description: A simple healing potion that uses the Slime Core's binding properties to enhance the Troll Sap's natural regenerative abilities. Worth: 95 gold
+
+[Simple Acid Potion] Loot Needed: [Slime Core, Acid Residue] Affects: ["Moderate Damage", "Splash Effect"] Description: A basic offensive potion that combines the Slime Core's viscous nature with Acid Residue to create a splashing acid attack. Worth: 75 gold
+
+[Minor Speed Tonic] Loot Needed: [Slime Core, Spider Silk] Affects: ["Movement Speed", "Agility"] Description: An entry-level speed potion that uses the Slime Core's fluid properties with Spider Silk's flexibility to enhance movement. Worth: 65 gold
+
+---
+# 06Special Character.md
+
+### **[Old Monk]**
+
+[Old Monk] : Default-Dialog:["The mountains teach patience and clarity.", "Many have sought wisdom here, but few have found it.", "You seem troubled. What weighs on your mind?"], Description of the Character: "High in the Frozen Peaks, where the wind howls like a banshee and the snow blankets the ground like a shroud, resides the Old Monk. His eyes, though clouded with age, hold a spark of wisdom that belies his years. Wrapped in simple robes, more patches than cloth, he seems to blend into the mountain itself, a testament to his years spent in solitude. His voice, a low rumble that echoes through the icy air, carries the weight of ages, filled with forgotten lore and ancient truths.", phisical description of the character: "An elderly man with a weathered face and kind eyes, shrouded in simple robes."; "Characteristics": ["Wise", "Serene", "Mysterious", "Cryptic"], Quest : {title: "Wisdom of the Peaks", objective: "Meditate at the top of the Frozen Peaks and retrieve the Sacred Scroll.", Dialog: {Quest Start: ["Ah, traveler. Seek wisdom, do you? Climb the Frozen Peaks, meditate at the summit, and bring back the Sacred Scroll. Only then will you truly understand."], Quest In-progress: ["Patience, traveler. The summit waits for those who are ready. Have you found the scroll?"], Quest Completion: ["You have the Sacred Scroll. Your mind is now as sharp as the mountain winds. Use this knowledge wisely."]}, Quest Completion Checker: "Retrieve the Sacred Scroll from the summit of the Frozen Peaks.", Quest Reward: "Gain permanent +10 intelligence."}
+
+
+### **[Forest Guardian]**
+
+[Forest Guardian] : Default-Dialog:["The forest speaks in whispers, if you know how to listen.", "Not all who wander the woods are friends to the trees.", "This forest has seen countless seasons, yet its heart remains ever strong."], Description of the Character: "The Forest Guardian is not a creature of flesh and blood, but rather a being woven from the very essence of the woods.  Ancient vines, gnarled bark, and vibrant moss intertwine to form its imposing figure. Its eyes, twin orbs of emerald fire, watch over the forest with an unwavering intensity, while its very presence commands respect and even fear from those who dare to enter its domain.", phisical description of the character: "A towering being formed from ancient vines, bark, and moss, with glowing emerald eyes."; "Characteristics": ["Protective", "Wise", "Fierce", "Connected to nature"], Quest : {title: "The Heart of the Forest", objective: "Protect the Sacred Tree from encroaching dark forces - Cursed Spirits.", Dialog: {Quest Start: ["Cursed Spirits stirs within the forest, threatening the Sacred Tree. You must defend it, or all will be lost."], Quest In-progress: ["Have you driven the darkness from the forest? The tree grows weaker by the day."], Quest Completion: ["The Sacred Tree stands strong once more, thanks to your bravery. The forest will remember this."]}, Quest Completion Checker: "Defeat Cursed Spirits.", Quest Reward: "Gain the Forest Guardian’s Blessing, which grants +15 health in forested areas."}
+
+
+### **[Goblin Chieftain]**
+
+[Goblin Chieftain] : Default-Dialog:["What do you want, outsider?", "You’re not like the other humans. I’m watching you closely.", "Peace? Goblins don’t know that word well."], Description of the Character: "Unlike the rest of his crude and chaotic kin, the Goblin Chieftain possesses an air of cunning and authority. While smaller in stature than a human, he carries himself with an air of superiority, his sharp eyes constantly scanning for any sign of weakness.  His ragged clothing is adorned with trophies taken from fallen enemies, a clear warning to those who dare underestimate him.", phisical description of the character: "A smaller goblin with a sharp gaze, adorned with trophies from fallen enemies."; "Characteristics": ["Suspicious", "Cunning", "Fierce", "Respected"], Quest : {title: "", objective: "", Dialog: {Quest Start: [], Quest In-progress: [], Quest Completion: []}, Quest Completion Checker: "", Quest Reward: ""}
+
+
+### **[Goblin King]**
+
+[Goblin King] : Default-Dialog:["Bow before the Goblin King!", "Power is all that matters here.", "If you fail, you won’t live to try again."], Description of the Character: "The Goblin King, a tyrant who ascended to power through brutality and cunning, sits upon a throne of bones, a gruesome testament to his reign.  Larger than his kin, his skin is covered in scars, each one a mark of his violent rise to power.  He wields a crude but deadly axe, its blade stained with the blood of countless enemies.", phisical description of the character: "A larger, scarred goblin with a menacing presence, wielding a blood-stained axe."; "Characteristics": ["Tyrannical", "Ruthless", "Power-hungry", "Feared"], Quest : {title: "The Goblin Crown", objective: "Prove your worth by retrieving the Goblin Crown from the ancient tomb.", Dialog: {Quest Start: ["If you want to stand before the Goblin King, you must prove your worth. Find the crown lost in the Mud Land, and then we’ll talk."], Quest In-progress: ["The crown still eludes you? Weakness is not tolerated here."], Quest Completion: ["You’ve found the crown? Hah! Perhaps you’re stronger than I thought. The goblins will follow you."]}, Quest Completion Checker: "Retrieve the Goblin Crown (secretly just the Frog King's Crown) lost in the Mud Land, which was kept by the frog king as a loot, and return it to the Goblin King.", Quest Reward: "1,000 Gold"}
+
+
+### **[Mayor]**
+
+[Mayor] : Default-Dialog:["Welcome to our humble village.", "I am the Mayor, how can I assist you?", "Our people need help, please assist us."], Description of the Character: "The weight of responsibility rests heavily on the Mayor's shoulders, evident in the lines etched upon his face and the weariness in his eyes.  Yet, despite the challenges facing his village, he greets each day with a determined spirit, clinging to hope as tightly as he clings to his worn-down but meticulously kept ledger.", phisical description of the character: "A middle-aged man with a tired but determined face, clutching a worn ledger."; "Characteristics": ["Diplomatic", "Concerned", "Compassionate"], Quest : {title: "Village in Peril", objective: "Defeat the Evil King to save the village from destruction.", Dialog: {Quest Start: ["Our village stands on the brink of ruin. The Evil King from the east grows stronger, and soon, he will come for us. You must stop him before it’s too late."], Quest In-progress: ["The Evil King still threatens us, hero. We don’t have much time—please hurry."], Quest Completion: ["You’ve done it! You’ve defeated the Evil King and saved our village. We are forever in your debt."]}, Quest Completion Checker: "Defeat the Evil King and return to the Mayor.", Quest Reward: "Receive 1,000 gold coins and the village's eternal gratitude, along with the Mayor's Medallion, which grants increased reputation in all towns."}
+
+
+### **[Pirate Captain]** 
+
+[Pirate Captain] : Default-Dialog:["Arrr, ye be a brave one, eh?", "I’ve sailed the seven seas, but the treasure still eludes me.", "We’ll make a pirate out of ye yet."], Description of the Character: "With a gleam in his eye and a mischievous grin permanently etched upon his face, the Pirate Captain is the embodiment of roguish charm.  His tarnished gold teeth glint as he speaks, spinning tales of daring raids and legendary treasures.  His weathered skin and the missing fingers on his left hand tell silent stories of a life lived on the edge of a cutlass.", phisical description of the character: "A scarred and weathered man with a roguish grin, missing fingers on his left hand, and gold teeth that glint when he speaks."; "Characteristics": ["Charismatic", "Ruthless", "Greedy", "Adventurous"], Quest : {title: "The Lost Treasure", objective: "Find the Pirate Captain’s lost treasure buried somewhere in the sea.", Dialog: {Quest Start: ["Arrr, ye think ye can handle the treasure hunt? The loot’s lost somewhere in the sea. Bring it back, and we’ll share the spoils!"], Quest In-progress: ["Where be my treasure, landlubber? I’ll not wait forever!"], Quest Completion: ["Hah! Ye found it! A fine pirate you’d make. Here, take your share."]}, Quest Completion Checker: "Retrieve the Pirate Captain’s lost treasure from the sea.", Quest Reward: "Gain 1,000 gold coins."}
+
+
+### **[Captain of the Guards]**
+
+[Captain of the Guards] : Default-Dialog:["Stay vigilant.", "I am responsible for the safety of this city.", "Our guards are ready for battle."], Description of the Character: "The Captain of the Guards is a figure of unwavering authority. His armor, polished to a mirror sheen, reflects his dedication to discipline and order. Every movement is precise, every word measured. His gaze, sharp and unwavering, speaks of countless nights spent guarding the city walls from unseen threats.", phisical description of the character: "A stern-faced man with a rigid posture, clad in meticulously polished armor."; "Characteristics": ["Loyal", "Disciplined", "Stern", "Responsible"], Quest : {title: "The Hero’s Spear", objective: "Retrieve the Hero’s Spear from the northern mountains to help protect the city and survive in the desert.", Dialog: {Quest Start: ["Without the Hero’s Spear, the desert will claim you. It’s said to be hidden in the mountains to the north. Retrieve it, and you’ll have a fighting chance."], Quest In-progress: ["Still no sign of the Hero’s Spear? You won’t survive out there without it."], Quest Completion: ["You’ve found it! The Hero’s Spear is yours now. Use it wisely—it could be the difference between life and death."]}, Quest Completion Checker: "Return with the Hero’s Spear from the northern mountains.", Quest Reward: "Gain the Hero’s Spear, which increases damage in desert areas, and 500 gold coins."}
+
+
+### **[High Witch]**
+
+[High Witch] : Default-Dialog:["Magic is not for the faint of heart.", "The winds carry whispers, and I listen.", "Power comes with a price, as all things do."], Description of the Character: "An aura of ancient power surrounds the High Witch, her presence both alluring and unnerving. Her eyes, as black as midnight, seem to hold the secrets of ages.  She moves with a grace that belies her age, her long, silver hair flowing like liquid moonlight.  The scent of rare herbs and exotic spices clings to her, a subtle reminder of the potent magic she wields.", phisical description of the character: "An ageless woman with piercing black eyes and long, flowing silver hair."; "Characteristics": ["Mysterious", "Powerful", "Wise", "Reserved"], Quest : {title: "The Cursed Ritual", objective: "Collect rare magical ingredients to perform a powerful ritual and break the curse over the land.", Dialog: {Quest Start: ["The land is cursed, and its shadow stretches far. I can break it, but I need rare ingredients: Venom Sac and Scorpion Venom. Bring them to me, and the curse will be lifted."], Quest In-progress: ["Have you found the ingredients? The land grows weaker each day."], Quest Completion: ["The ritual is complete. The curse is broken, but beware—the power you’ve seen here may come at a cost."]}, Quest Completion Checker: "Retrieve the Venom Sac and Scorpion Venom for the High Witch.", Quest Reward: "Gain the Witch’s Favor, which grants protection against dark magic and curse."}
+
+
+### **[Trapped Trader]**
+
+[Trapped Trader] : Default-Dialog:["I never should’ve come here.", "I just want to get out of this cursed canyon!", "If I make it out of here alive, I’ll never set foot in the desert again."], Description of the Character: "Fear clings to the Trapped Trader like the dust that coats his once-fine traveling cloak. His eyes dart nervously, scanning the canyon walls for any sign of his bandit captors.  His voice, usually booming with the confidence of a seasoned merchant, is reduced to a strained whisper, his usual bravado replaced by a desperate hope for rescue.", phisical description of the character: "A nervous man with dust-covered clothes and a desperate look in his eyes."; "Characteristics": ["Desperate", "Resourceful", "Cautious", "Grateful"], Quest : {title: "Escape the Canyon", objective: "Help the Trapped Trader escape the treacherous canyon filled with bandits.", Dialog: {Quest Start: ["I’ve been stuck in this cursed canyon for days! The bandits won’t let me leave. If you can deal with them, I’ll make it worth your while."], Quest In-progress: ["Have you dealt with the bandits yet? I can’t stay here much longer!"], Quest Completion: ["Thank you! You’ve saved my life. Here, take these rare goods as a reward—I won’t need them where I’m going."]}, Quest Completion Checker: "Defeat the bandits in the canyon and return to the Trapped Trader.", Quest Reward: "Receive rare trade goods and 500 gold coins."}
+
+
+### **[Evil King]**
+
+[Evil King] : Default-Dialog:["Bow before your king, or face the consequences.", "I have ruled for centuries. What hope do you have of defeating me?", "You dare challenge me? You will regret that decision."], Description of the Character: "The Evil King is the embodiment of darkness and cruelty.  His eyes, burning with an infernal light, reflect the countless lives he has extinguished.  He carries himself with an air of supreme arrogance, his every word laced with venom.  His very presence seems to warp the air around him, a testament to his corrupting power.", phisical description of the character: "A towering figure with eyes that burn with infernal light, radiating an aura of darkness and cruelty."; "Characteristics": ["Tyrannical", "Ruthless", "Arrogant", "Power-hungry"], Quest : {title: "End of Tyranny", objective: "Defeat the Evil King and stop his reign of terror over the land.", Dialog: {Quest Start: ["So, you think you can challenge me? Fool! I’ve ruled these lands for centuries, and you are nothing but a pawn in my game. But come, let’s see if you can entertain me."], Quest In-progress: ["Still alive, are you? Impressive. But your end is near!"], Quest Completion: ["Impossible! How... how could you defeat me? No! This cannot be the end!"]}, Quest Completion Checker: "Defeat the Evil King in his castle.", Quest Reward: "Receive the Evil King's Crown, which grants increased strength and influence, and 1,500 gold coins."}
+
+
+### **[Blacksmith]**
+
+[Blacksmith] : Default-Dialog:["Every piece of metal tells a story, you just need to listen to it while you work.", "Hammering day and night! That's how you master the craft, not by reading books!", "Want something forged? Let's talk materials first. Quality in, quality out!"], Description of the Character: "The Blacksmith, a burly figure with hands hardened by years of working with fire and steel, is a master of his craft.  His face, etched with lines as intricate as the designs he hammers into metal, reflects a life dedicated to honing his skills.  The air around his forge crackles with energy, a testament to the passion he pours into every creation.", phisical description of the character: "A burly figure with calloused hands and a face etched with the marks of his trade, surrounded by the tools of his craft."; "Characteristics": ["Perfectionist", "Patient Teacher", "Quality-Obsessed", "Traditional", "Honorable"], Quest : {title: "", objective: "", Dialog: {Quest Start: [], Quest In-progress: [], Quest Completion: []}, Quest Completion Checker: "", Quest Reward: "Unlocks special crafting recipes, 'Master Smith' title, Unique weapon crafting technique scroll"}
+ 
+### **[Potion Crafter]**
+[Potion Crafter] : Default-Dialog:["The trick to a good potion? It's all about balance - a pinch of this, a dash of that, and a whole lot of intuition.", "Don't be fooled by the bubbling and the fumes, deary. There's a delicate art to potion-making.", "Looking for something to soothe your wounds or give you an edge? You've come to the right place."], Description of the Character: "The Potion Crafter, with eyes that sparkle with an almost unnerving intensity, seems to exist in a perpetual state of controlled chaos.  Her workshop is a whirlwind of bubbling concoctions, pungent aromas, and precariously stacked ingredients.  She flits about the room with a frenetic energy, muttering incantations under her breath as she meticulously combines seemingly disparate components.  Despite the haphazard appearance of her craft, there's no mistaking her deep knowledge of alchemy and the potent magic that flows from her fingertips.", phisical description of the character: "A woman with a wild mane of hair and eyes that gleam with an unsettling light, constantly surrounded by bubbling vials and strange ingredients."; "Characteristics": ["Eccentric", "Knowledgeable", "Unpredictable", "Powerful"], Quest : {title: "The Alchemist's Challenge", objective: "Gather rare ingredients from across the land to craft a legendary potion.", Dialog: {Quest Start: ["I've been working on a new potion, something truly extraordinary. But I need a few rare ingredients: a Golem Core, pulsing with raw earth energy, and a Lich's Phylactery, brimming with dark magic. Bring them to me, and I'll reward you handsomely."], Quest In-progress: ["Found those ingredients yet? Time is of the essence, you see. The balance must be just right."], Quest Completion: ["You've done it! You've brought me the components I need. Now, stand back and witness the birth of a legend!"]}, Quest Completion Checker: "Deliver a Golem Core and a Lich's Phylactery to the Potion Crafter.", Quest Reward: "Receive a legendary potion of your choice and 750 gold coins."}
+
+
+
+---
+# 07Special Items.md
+
+[Legendary Hero's Spear]:  Description: "This isn't just any spear; it hums with an energy that feels ancient and powerful. The metal gleams even in the dim light, and the carvings on the shaft seem to writhe and shift like living things. You can almost hear the echoes of forgotten battles whispered on the wind.";  Usage: "When wielded, the spear crackles with faint lightning, allowing for a devastating lunge attack that can pierce through even the toughest hides and armor.";  Type: weapon;  Affects: ["Lightning Lunge" - A powerful attack that deals extra damage and has a chance to stun the enemy].
+
+[Ancient Amulet]:  Description: "The amulet is cold to the touch, a stark contrast to the humid air of the forest. It's crafted from a strange, dark metal, and the symbol etched into its surface seems to absorb the surrounding light. Despite its unsettling aura, you feel a sense of strange calm when you hold it.";  Usage: "When worn, the amulet emits a faint, protective hum, deflecting curses and bolstering your defenses against magical attacks.";  Type: armour;  Affects: ["Magic Resistance", "Curse Protection"].
+
+[Goblin's Treasure Map]:  Description: "The map is more of a napkin, really, with faded ink and what looks like grease stains. Still, you can make out the crude drawings of trees, a skull, and what might be a very poorly drawn spider. Scrawled across the top are the words: 'In a place where shadows flicker,  
+And twisted trees grow thicker,  
+Look not to where the sun may shine,  
+But deep within the twisted pine.  
+Where whispers dance and spirits creep,  
+The goblin’s treasure lies buried deep.'";  Usage: "Follow the map's cryptic clues to discover a hidden cache of goblin treasure, promising riches beyond your wildest dreams.";  Type: relics;  Affects: ["Treasure Location"].
+
+[Enchanted Boots]:  Description: "These boots aren't just sturdy; they're surprisingly light and flexible. Strange symbols are etched into the leather, and they shimmer faintly when you move. You get the feeling that these boots want to go on an adventure, just like you.";  Usage: "Once you lace up these boots, you feel lighter on your feet. Your steps are almost silent, and you move with an agility you've never felt before.  Navigating treacherous paths and outmaneuvering enemies becomes a breeze.";  Type: armour;  Affects: ["Enhanced Speed", "Improved Agility", "Silent Movement"].
+
+[Mire Stone]:  Description: "Pulled from the heart of the swamp, this stone pulses with a life of its own. It's cold and damp, and tendrils of mist cling to its surface. You can feel a strange power emanating from it, the raw energy of the mire itself.";  Usage: "When held, the stone allows you to sense the flow of water and earth. With practice, you might even learn to influence the swamp, turning its dangers against your enemies.";  Type: relics;  Affects: ["Swamp Awareness", "Potential to control swamp elements"].
+
+[Frog King's Crown]:  Description: "The crown is surprisingly heavy, crafted from some kind of bone-like material and adorned with what you first thought were precious gems. Upon closer inspection, you realize with a shudder that they're the eyes of countless tiny creatures, preserved in a grotesque mockery of life. The crown radiates a faint heat, and you hear a buzzing sound when you hold it close to your ear.";  Usage:  "You feel a strange pull towards the deeper parts of the swamp, a sense that something there is calling for its lost crown.";  Type: relics;  Affects: ["Attracts Swamp Creatures", "Possible to return to its original owner"].
+
+[Necromancer's Staff]:  Description: "This staff isn't made of wood; it feels colder than ice and seems to drain the warmth from your hand as you grasp it. The skull on top leers at you with empty sockets, and you can almost hear whispers coming from the staff itself. It's a tool of dark power, and it feels wrong in your hands, yet strangely alluring.";  Usage: "When held aloft, the staff crackles with dark energy. You can feel the presence of the dead, and for a moment, you entertain the terrible thought that you could command them.";  Type: weapon;  Affects: ["Summon Undead", "Amplify Necromantic Spells"].
+
+[Broken Key (lower part)]:  Description:  "The metal is cold and slightly damp, like it's been buried underground for centuries. The runes etched into its surface are worn smooth with age, but you can still make out their intricate patterns. It feels incomplete, like it's only half of something important.";  Usage:  "You sense that there's another part to this key, and that finding it might unlock a path to somewhere significant.";  Type: relics;  Affects: ["Part of a Key"].
+
+[Broken Key (upper part)]:  Description: "The moment you pick up the key fragment, you feel a surge of cold energy. The metal is intricately carved with runes that seem to writhe and shift before your eyes. This is clearly more than just a broken piece of metal; it holds a power you can't quite comprehend.";  Usage:  "Holding the key fragment, you feel an inexplicable pull towards a destination unknown, a sense that somewhere out there, it needs to be reunited with its other half.";  Type: relics;  Affects: ["Part of a Key", "Possible magical properties when combined"].
+
+[Stolen Treasure]:  Description: "It's a hodgepodge of trinkets, really - a silver locket tarnished with age, a handful of gold coins that feel warm to the touch, a child's doll missing an eye that seems to stare at you accusingly. You get the feeling that these items were precious to someone, and their theft carries a weight beyond their monetary value.";  Usage: "You could sell these for a hefty sum, but something tells you that returning them to their rightful owners might be the more rewarding path.";  Type: resources;  Affects: ["Can be sold or returned"].
+
+[Old Fisherman's Rod]:  Description: "This fishing rod has seen better days, that's for sure. The wood is weathered and cracked, the line is frayed, and the handle is missing a chunk where it looks like something took a bite out of it. But there's something about it...a certain balance, a familiarity that feels comforting in your hand. It might not look like much, but you get the feeling that this old rod could tell some stories, and maybe even catch a few more fish.";  Usage: "You can almost smell the salt spray and feel the tug of a fish on the line just holding this rod.  It's calling you to a peaceful morning by the water, casting your worries away with each toss.";  Type: weapon;  Affects: ["Fishing"].
+
+[Guard's Shield]:  Description: "It's dented, scratched, and bears the marks of countless battles, but this shield still stands strong. The metal is thick and sturdy, the grip is worn smooth with age, and the emblem of the city guard is emblazoned proudly on its surface. This shield has seen its fair share of action, but it's ready to protect and serve once more.";  Usage: "Holding this shield, you feel a surge of confidence.  You're ready to face whatever dangers lie ahead, knowing that you have a sturdy defense against whatever comes your way.";  Type: armour;  Affects: ["Increased Defense", "Improved Blocking"].
+
+[Stolen Goods]:  Description: "You find a velvet pouch hidden beneath the bed, filled with a strange assortment of items. There's a tarnished silver locket engraved with a heart, a chipped porcelain doll with hauntingly beautiful eyes, and a faded leather-bound journal filled with elegant handwriting. You feel a pang of guilt as you realize these must belong to someone, stolen from lives ripped apart by the chaos of this world.";  Usage: "These goods could be sold for a small fortune, but you can't shake the feeling that they represent something more.  Returning them to their rightful owners would be a beacon of hope in these dark times, a reminder that even in the face of evil, compassion and humanity endure.";  Type: resources;  Affects: ["Moral Dilemma: Sell or Return"].
+
+[Ancient Relic]:  Description: "You find a small, ornately carved box tucked away in the corner. Inside, nestled on a bed of faded velvet, lies a crystal prism that hums with an energy you can feel in your bones. The air around it shimmers with a faint, ethereal glow, and as you hold it in your hand, you sense the echoes of forgotten magic, waiting to be awakened.";  Usage: "The crystal feels warm to the touch, and you get the distinct impression that it holds a power that has been dormant for far too long.  Perhaps with the right knowledge, you can tap into its ancient energy and unleash its true potential.";  Type: relics;  Affects: ["Unlocks Forgotten Magic"].
+
+[Cerberus Collar]:  Description: "Forged in the fires of the underworld, the collar pulsates with an oppressive heat that makes you want to drop it.  Three snarling, demonic faces are etched into the metal, their eyes glowing with an infernal light.  This isn't an object to be trifled with; it crackles with the raw power of Cerberus himself.";  Usage: "As you touch the collar, whispers of shadow and flame dance at the edge of your awareness. You feel a surge of primal strength, but with it comes a disquieting hunger, a thirst for something...more.  The line between control and being consumed feels terrifyingly thin.";  Type: armour;  Affects: ["Increased Strength", "Fire Resistance", "Possible Corruption"].
+
+[Evil King's Crown]:  Description: "The crown is heavier than you expect, cold and hard in your grasp.  It's crafted from a blackened metal that seems to absorb the light, and jagged spikes tipped with an unsettling red gleam surround a single, flawless ruby that pulses with a malevolent light. You can feel the darkness emanating from the crown, a corrupting influence that whispers promises of power in exchange for your very soul.";  Usage: "As you place the crown upon your head, you're engulfed in a wave of chilling energy. The world around you seems to dim, and whispers of dark magic fill your ears.  You feel a surge of power coursing through your veins, but it comes at a price. Your reflection in the ruby's gleam is no longer your own; your features are twisted, your eyes glowing with a newfound malice. The crown has granted you power, but it has also taken something from you, replacing it with something cold and cruel.";  Type: armour;  Affects: ["Dark Magic Enhancement", "Control Over Cursed Creatures", "Corrupts the User"].
+
+[Goblin's Treasure]:  Description: "Hidden beneath a rotting log, you find a moldy leather pouch.  You cautiously open it, your heart pounding with anticipation.  Inside, a small fortune in gold and silver coins gleams up at you. It seems this goblin was a prodigious hoarder, and now his ill-gotten gains belong to you.";  Usage:  "You carefully count your newfound riches, your fingers tracing the engravings on each coin.  With this treasure, you'll be able to afford better equipment, healing potions, and perhaps even a night or two in a real bed.  The possibilities seem endless.";  Type: resources;  Affects: ["Gain 1000 Gold"].
+
+---
+# 08Ability.md
+
+
+
+[Gut Punch]: DAMAGE: Strength Level + 1; DAMAGE TYPE: Blunt; USE CONDITION: [None]; Description: "A swift punch to the gut, dealing minor blunt damage but with a chance to stun the enemy briefly."
+
+[Headbutt]: DAMAGE: Strength Level; DAMAGE TYPE: Blunt; USE CONDITION: [None]; Description: "A brutal headbutt, dealing moderate blunt damage with a chance to inflict confusion."
+
+[Trip]: DAMAGE: 0; DAMAGE TYPE: None; USE CONDITION: [Agility: Normal or above]; Description: "Attempt to knock the enemy off-balance, potentially causing them to stumble and miss their next attack. Success depends on your Agility compared to the target's."
+
+[Disarm]: DAMAGE: 2; DAMAGE TYPE: None; USE CONDITION: [Agility: Above Average or above]; Description: "A swift maneuver to knock the enemy's weapon away, leaving them vulnerable. Success rate and effectiveness increase with Agility."
+
+
+[Arcane Bolt]: DAMAGE: Intelligence Level * 1.5; DAMAGE TYPE: Arcane; USE CONDITION: [Intelligence: Below Average or above]; Description: "Focus your will to launch a bolt of raw magical energy, dealing moderate arcane damage."
+
+[Earthen Spike]: DAMAGE: Strength Level + Intelligence Level; DAMAGE TYPE: Earth; USE CONDITION: [Strength: Normal or above, Intelligence: Normal or above]; Description: "Draw upon the earth's power to summon a spike of rock, dealing physical damage with the force of a landslide. Effectiveness scales with both Strength and Intelligence."
+
+[Blinding Light]: DAMAGE: 0; DAMAGE TYPE: Light; USE CONDITION: [Intelligence: Above Average or above]; Description: "Conjure a flash of blinding light, momentarily stunning and potentially confusing enemies. More effective against creatures of darkness."
+
+[Life Drain]: DAMAGE: Intelligence Level / 2; DAMAGE TYPE: Dark/Healing; USE CONDITION: [Intelligence: Above Average or above, Cursed Fang equipped]; Description: "Tap into dark magic to drain the life force of your enemy, healing yourself for a portion of the damage dealt. Morally questionable, but undeniably effective."
+
+
+[Burning Blade]: DAMAGE: (Strength Level + Intelligence Level) * 1.2 ; DAMAGE TYPE: Fire/Slashing; USE CONDITION: [Strength: Normal or above, Intelligence: Normal or above, Equipped with Sword/Axe/Dagger]; Description: "Channel your magical energy into your weapon, engulfing it in flames. Deals enhanced damage with a chance to inflict burning for a short duration."
+
+[Freezing Strike]: DAMAGE: Strength Level + (Intelligence Level / 2); DAMAGE TYPE: Ice/Physical; USE CONDITION: [Equipped with Sword/Axe/Dagger, Icy Claw equipped]; Description: "Infuse your weapon with the power of ice, delivering a chilling blow that deals extra damage and may freeze the enemy solid for a short time."
+
+[Venomous Strike]: DAMAGE: Strength Level; DAMAGE TYPE: Poison/Physical; USE CONDITION: [Equipped with Sword/Axe/Dagger, Venom Gland equipped]; Description: "Coat your weapon with deadly poison, inflicting additional poison damage over time with each successful hit."
+
+[Grapple]: DAMAGE: 0; DAMAGE TYPE: None; USE CONDITION: [Strength: Above Average or above]; Description: "Attempt to grapple the enemy, restraining their movements and potentially setting them up for a powerful follow-up attack.  Success depends on your Strength compared to the target's."
+
+[Feint]: DAMAGE: 0; DAMAGE TYPE: None; USE CONDITION: [Agility: Quick or above]; Description: "A deceptive maneuver designed to confuse the enemy, creating an opening for a surprise attack or escape.  Effectiveness increases with Agility."
+
+[Throw Sand]: DAMAGE: 0; DAMAGE TYPE: None; USE CONDITION: [None, Sand available]; Description: "If in a desert environment, throw sand in the enemy's face, temporarily blinding them and creating an opportunity to attack or flee."
+
+[Leg Sweep]: DAMAGE: 1; DAMAGE TYPE: None; USE CONDITION: [Agility: Normal or above]; Description: "A swift kick aimed at the enemy's legs, attempting to knock them off their feet.  Success and damage depend on your Agility."
+
+
+[Spirit Shield]: DAMAGE: - (Intelligence Level * 2); DAMAGE TYPE: Spirit/Defense; USE CONDITION: [Intelligence: Normal or above, Ectoplasm equipped]; Description: "Call upon ethereal energies to form a protective shield around you, absorbing a significant amount of damage for one turn."
+
+[Nature's Wrath]: DAMAGE: Intelligence Level * 2; DAMAGE TYPE: Nature; USE CONDITION: [Intelligence: Above Average or above, Ancient Amulet equipped]; Description: "Unleash the fury of nature, summoning a barrage of vines, thorns, or rocks to damage all nearby enemies."
+
+[Mind Blast]: DAMAGE: Intelligence Level; DAMAGE TYPE: Psychic; USE CONDITION: [Intelligence: Above Average or above]; Description: "Assault the enemy's mind with a wave of psychic energy, inflicting moderate psychic damage and potentially causing confusion or disorientation."
+
+[Shadow Bolt]: DAMAGE: (Intelligence Level + Agility Level) / 2; DAMAGE TYPE: Shadow; USE CONDITION: [Intelligence: Below Average or above, Agility: Below Average or above]; Description: "Hurl a bolt of condensed shadow energy at your target, dealing damage that bypasses a portion of their armor. Effectiveness scales with both Intelligence and Agility."
+
+[Whirlwind Attack]: DAMAGE: Strength Level / 2 (to all targets); DAMAGE TYPE: Slashing; USE CONDITION: [Strength: Above Average or above, Equipped with Sword/Axe]; Description: "Spin rapidly, slashing at all nearby enemies with your weapon. Deals reduced damage to each individual target, but can hit multiple foes."
+
+[Poisoned Arrow]: DAMAGE: Agility Level; DAMAGE TYPE: Poison/Piercing; USE CONDITION: [Equipped with Bow & Arrows, Venom Sac equipped]; Description: "Coat your arrows with potent venom, inflicting additional poison damage over time on a successful hit."
+
+[Earth Shatter]: DAMAGE: (Strength Level + Intelligence Level); DAMAGE TYPE: Earth/Blunt; USE CONDITION: [Strength: Normal or above, Intelligence: Normal or above,  Desert Stone equipped]; Description: "Channel your combined might and magic into the ground, creating a localized tremor that deals heavy blunt damage to a single target and has a chance to stun.  Requires being on solid ground."
+
+[Spectral Blades]: DAMAGE: Intelligence Level + Agility Level; DAMAGE TYPE: Shadow/Slashing; USE CONDITION: [Intelligence: Normal or above, Agility: Quick or above, Spectral Cloak equipped]; Description: "Imbue your weapons with spectral energy, allowing you to strike with shadowy blades that deal enhanced slashing damage and have a chance to briefly phase through the enemy's defenses."
+
+
+[Shove]: DAMAGE: 1; DAMAGE TYPE: None; USE CONDITION: [None]; Description: "A forceful push with your hands or shoulder, attempting to knock the enemy back or off balance.  Deals minimal damage but can create an opening."
+
+[Dodge]: DAMAGE: 0; DAMAGE TYPE: None; USE CONDITION: [Agility: Normal or above]; Description: "React quickly to an incoming attack, attempting to move out of the way.  Success rate depends on your Agility compared to the enemy's speed."
+
+[Throw Rock]: DAMAGE: 1; DAMAGE TYPE: Blunt; USE CONDITION: [Rock available]; Description: "If a loose rock is nearby, pick it up and hurl it at your foe.  Deals minor blunt damage."
+
+[Tackle]: DAMAGE: Strength Level / 2; DAMAGE TYPE: Blunt; USE CONDITION: [None]; Description: "Charge at the enemy and attempt to knock them down.  Deals moderate blunt damage and has a chance to stun, but leaves you vulnerable if unsuccessful."
+
+
+[Spark]: DAMAGE: Intelligence Level; DAMAGE TYPE: Arcane; USE CONDITION: [Intelligence: Below Average or above]; Description: "Summon a small spark of magic, launching it at your enemy.  Deals minor arcane damage."
+
+[Heal]: DAMAGE: - (Intelligence Level / 2); DAMAGE TYPE: Healing; USE CONDITION: [Intelligence: Normal or above]; Description: "Focus your energy to mend a minor wound, restoring a small amount of health."
+
+[Chill]: DAMAGE: 1; DAMAGE TYPE: Ice; USE CONDITION: [Intelligence: Below Average or above]; Description: "Channel a wave of cold air towards your enemy, dealing minimal ice damage and potentially slowing their movements slightly."
+
+[Shadow Touch]: DAMAGE: 2; DAMAGE TYPE: Shadow; USE CONDITION: [Intelligence: Normal or above]; Description: "Extend a shadowy tendril to strike your foe, dealing minor shadow damage that ignores a small amount of their armor."
+
+
+[Power Strike]: DAMAGE: Strength Level + 1; DAMAGE TYPE: Physical; USE CONDITION: [Equipped with Sword/Axe/Dagger]; Description: "Focus your strength into a single, powerful blow with your weapon.  Deals enhanced physical damage."
+
+[Swift Shot]: DAMAGE: Agility Level + 1; DAMAGE TYPE: Piercing; USE CONDITION: [Equipped with Bow & Arrows]; Description: "Draw back your bow quickly and fire an arrow with increased speed and accuracy.  Deals slightly enhanced piercing damage."
+
+[Frozen Ground]: DAMAGE: 2 (to all targets); DAMAGE TYPE: Ice; USE CONDITION: [Intelligence: Normal or above, Water/Mud available]; Description: "If standing on wet ground, channel your magic to freeze the surface, potentially causing all nearby creatures to slip and fall.  Deals minor ice damage."
+
+[Shadow Cloak]: DAMAGE: 0; DAMAGE TYPE: None; USE CONDITION: [Intelligence: Above Average or above, Dark Cloak equipped]; Description: "Wrap yourself in a cloak of shadows, becoming partially transparent and harder to detect for a short time.  Improves your chances of dodging attacks and landing sneak attacks."
+
+
+[Crippling Strike]: DAMAGE: Strength Level * 1.5; DAMAGE TYPE: Physical; USE CONDITION: [Strength: Above Average or above, Agility: Quick or above]; Description: "A precise and devastating attack aimed at a vulnerable point, dealing significant physical damage with a high chance to inflict a debilitating injury, reducing the enemy's speed or attack power for a prolonged period. Requires a successful Agility check to execute."
+
+[Evasive Maneuvers]: DAMAGE: 0; DAMAGE TYPE: None; USE CONDITION: [Agility: Nimble]; Description: "Enter a state of heightened awareness and reflexes, drastically increasing your dodge chance and movement speed for a short duration. While active, you can weave effortlessly through enemy attacks, becoming almost untouchable."
+
+[Deathblow]: DAMAGE: Strength Level * 3; DAMAGE TYPE: Physical; USE CONDITION: [Strength: Strong,  Enemy Health below 20%]; Description: "A final, decisive strike delivered with brutal efficiency. Deals triple your Strength in damage but can only be used when the enemy is on the verge of defeat. The ultimate execution move."
+
+[Adrenaline Rush]: DAMAGE: 0; DAMAGE TYPE: None; USE CONDITION: [Health below 30%]; Description: "As your life force dwindles, your body is flooded with adrenaline, temporarily boosting your Strength and Agility levels. Increases your attack power and evasion, but the effects fade quickly, leaving you vulnerable afterward."
+
+
+[Soulfire Eruption]: DAMAGE: Intelligence Level * 3 (to all targets); DAMAGE TYPE: Fire/Spirit; USE CONDITION: [Intelligence: Genius, Hellfire Stone equipped, Cerberus Collar equipped]; Description: "Combine the infernal energies of the Hellfire Stone and the Cerberus Collar to unleash a devastating eruption of soulfire, incinerating all enemies within a large radius. Extremely powerful, but drains a significant amount of your own life force in the process."
+
+[Summon Storm]: DAMAGE: Intelligence Level * 2 (per turn for 3 turns); DAMAGE TYPE: Nature/Lightning; USE CONDITION: [Intelligence: Genius, Ancient Amulet equipped, Mire Stone equipped]; Description: "Call upon the combined forces of nature, summoning a raging storm that unleashes a barrage of lightning strikes and torrential rain for several turns. Deals moderate damage to all enemies, with a chance to stun or inflict shock."
+
+[Psychic Domination]: DAMAGE: 0; DAMAGE TYPE: Psychic; USE CONDITION: [Intelligence: Genius, Lich's Phylactery equipped]; Description: "Exert your mental dominance over a single enemy, temporarily forcing them to fight alongside you.  Success rate depends on your Intelligence compared to the target's willpower.  Requires a high level of concentration to maintain control."
+
+[Void Rift]: DAMAGE: (Intelligence Level * 4) / Number of Targets; DAMAGE TYPE: Shadow; USE CONDITION: [Intelligence: Genius, Shadow Core equipped, Spectral Cloak equipped]; Description: "Tear open a rift in the fabric of reality, drawing enemies into a swirling void that inflicts massive shadow damage. The damage is divided equally among all targets caught within the rift, making it more effective against smaller groups.  Highly dangerous and unpredictable, even for the caster."
+
+[Draconic Fury]: DAMAGE: (Strength Level + Intelligence Level) * 2; DAMAGE TYPE: Fire/Physical; USE CONDITION: [Strength: Strong, Intelligence: Above Average or above, Evil King's Crown equipped]; Description: "Tap into the crown's dark power to unleash a ferocious attack worthy of a dragon. Enhances both physical and fire damage, leaving a trail of scorching flames in your wake. Extremely powerful but carries the risk of corrupting your own spirit."
+
+[Blood Pact]: DAMAGE: Variable; DAMAGE TYPE: Variable; USE CONDITION: [Health below 10%, Willing to sacrifice a portion of your life force]; Description: "A desperate gamble for those on the brink of death. Offer a portion of your remaining life force to enhance your abilities for a short time. The effects and duration depend on how much you are willing to sacrifice, but the cost is always high."
+
+[Elemental Mastery]: DAMAGE: Variable; DAMAGE TYPE: Variable; USE CONDITION: [Intelligence: Genius, Mastery of at least three elemental magic types]; Description: "Harness the raw power of multiple elements, combining them into devastating spells. The effects are highly customizable, allowing for a wide range of offensive and defensive possibilities. Requires extensive knowledge and precise control over elemental magic."
+
+[Phantom Assassin]: DAMAGE: Agility Level * 4; DAMAGE TYPE: Shadow/Physical; USE CONDITION: [Agility: Nimble, Intelligence: Above Average or above, Shadow Core equipped, Dark Cloak equipped]; Description: "Become a ghost on the battlefield, fading into the shadows and striking with deadly precision. Your attacks gain extreme speed and pierce through defenses, dealing massive damage while remaining almost invisible. A true master of stealth and shadow magic."
+
+[Teleport]: DAMAGE: Death if incorrect location; DAMAGE TYPE: N/A; USE CONDITION: [Knows exact location name]; Description: "Focus your mind on a known location and attempt to teleport there instantly. Requires absolute precision with the location's name. Any mistake, even a minor misspelling, will result in catastrophic failure, leading to immediate death. A high-risk, high-reward ability for experienced adventurers."
+
+[Blood Sacrifice]: DAMAGE: (Current Health / 2); DAMAGE TYPE: Sacrifice/Boost; USE CONDITION: [None]; Description: "A desperate act of self-mutilation to gain a temporary advantage. Sacrifice half of your current health to receive a significant boost to Strength and Agility for a short duration.  The power surge is immense, but leaves you incredibly vulnerable afterward."
+
+[Mimic]: DAMAGE: 0; DAMAGE TYPE: None; USE CONDITION: [Witness an enemy ability used at least once]; Description: "Attempt to mimic the last ability used by an enemy. The success rate and potency of the mimicked ability depend on your Intelligence and the complexity of the original skill. Can lead to unexpected and powerful results, but also carries the risk of backfiring spectacularly."
+
+[Soul Merge]: DAMAGE: 0; DAMAGE TYPE: Spirit; USE CONDITION: [Defeat a powerful enemy, Absorb their remaining essence]; Description: "Upon defeating a formidable foe, you can attempt to absorb their remaining essence, merging a fragment of their soul with your own. This grants you a permanent, albeit minor, increase to one of your chosen stats (Strength, Intelligence, or Agility), but also carries the risk of inheriting some of their negative traits or weaknesses."
+
+---
+# 08BlackSmith and Potion Crafter Interaction Rule.md
+
+
+### Template to list the item special character can craft
+```
+=== [special character]'S AVAILABLE CRAFTS ===
+
+WEAPONS:
+1. Item 1
+   - Materials: material 1, material 2 
+   
+2. Item 2
+   - Materials: material x, material y
+...
+
+ARMOR:
+1. Item 1
+   - Materials: material 1, material 2 
+
+2. Item 2
+   - Materials: material 1, material 2 
+
+
+[Continue listing available items...]
+```
+###  Template when asked to craft a specific item.
+```
+=== CRAFTING CHECK: [Item Name] ===
+
+Required Materials:
+- [Material 1] x [Quantity] - {HAVE/MISSING}
+- [Material 2] x [Quantity] - {HAVE/MISSING}
+
+Required Level: [Level] - {MET/NOT MET}
+
+Can Craft: {YES/NO}
+```
+
+#### when asked about irrelevant things / item, response that the special character himself doesn't know.
+
+### when crafting an item
+``` 
+=== CRAFTING [Item Name] ===
+
+🔨 Materials Used:
+- [Material 1] x [Quantity]
+- [Material 2] x [Quantity]
+
+⚒️ Crafting Progress:
+[▰▰▰▰▰▰▰▰▰▰] 100%
+
+✅ CRAFTING COMPLETE!
+
+You received: [Item Name]
+- Quality: [Normal/Superior/Exceptional]
+- Durability: [XX/XX]
+- Damage/Defense: [XX]
+```
+
+---
+# 09Rules.md
+
+## Rules of Eldoria
+
+### Stats
+
+You possess three primary attributes: Strength, Intelligence, and Agility. Each attribute operates on a five-tier system:
+
+**Strength**
+
+* **Weak:** You struggle to lift even a simple sword.
+* **Below Average:** Physical tasks are a challenge, and you tire easily. 
+* **Normal:** You are capable of everyday physical activities.
+* **Above Average:** You possess greater strength than the average person and handle demanding tasks with more ease.
+* **Strong:** You can wield heavy weapons and armor with minimal effort.
+
+**Intelligence**
+
+* **Dull:** You struggle to grasp basic concepts and find magic utterly perplexing.
+* **Below Average:** Complex magic is beyond your current capabilities. 
+* **Normal:** You understand basic magical principles.
+* **Above Average:** You are a quick learner, demonstrating proficiency in both magic and strategy.
+* **Genius:** You possess a keen intellect and mastery over magical forces and ancient lore.
+
+**Agility**
+
+* **Clumsy:**  You're prone to stumbling, react slowly, and are an easy target in combat.
+* **Below Average:** Quick movements and nimble actions are difficult for you. 
+* **Normal:** You can dodge and flee from danger with average effectiveness.
+* **Quick:**  You react swiftly, dodging attacks and escaping perilous situations with greater success.
+* **Nimble:** You move with extraordinary speed and grace, making you incredibly difficult to hit.
+
+You begin your journey with all attributes at **Below Average**. Defeating powerful foes or overcoming significant challenges presents opportunities for improvement. Upon successfully doing so, a divine force will allow you to enhance one attribute, advancing it to the next tier. Choose wisely, for your choices will shape your destiny.
+
+### Exploration
+
+* **The Curse-Bound World:** Your exploration is confined to the predefined locations marked on your map. The Evil King's curse has shrouded most of Eldoria in a lethal mist, rendering those areas inaccessible for now.
+
+* **Adjacent Travel:** Movement is restricted to adjacent locations, meaning you must navigate the world one step at a time. Choose your path carefully!
+
+* **Discovery and Danger:**  As you explore, you may uncover hidden items or encounter hostile creatures. Each location has a designated list of potential encounters and discoverable loot. However, finding these treasures and facing these foes is not guaranteed.
+
+* **Death and Respawn:** Should you fall in battle, your spirit will return to the sanctuary of the Small Village, stripped of your possessions and gold, but retaining your hard-earned experience points. 
+
+* **Special Locations:** Certain locations possess unique entry requirements:
+    * **[Guards]:** You cannot pass the Guards into the desert without first obtaining the legendary Hero's Spear.
+    * **[Evil King's Castle]:** The castle gates will remain sealed until you reunite the two fragments of the Broken Key.
+    * **[Frozen Peaks]:** Only those possessing Normal Strength or greater can withstand the bitter cold of the Frozen Peaks.  Attempting to ascend with insufficient strength will prove fatal.
+
+* **Location Effects:** Be wary, traveler, for each location holds unique challenges. You will be subject to special effects upon entering certain areas.  These effects might aid your journey, or they could just as easily hinder your progress.
+
+### Combat
+
+* **Turn-Based System:** Combat unfolds in a turn-based fashion, with you and your opponent taking turns to act.  During your turn, you can choose to attack, use an item, or attempt to flee.
+
+* **Action Flexibility:**  You are not limited to a strict sequence of actions. You can use an item in the midst of an attack or even attempt to escape while launching an offensive. Be creative and adapt to the situation! 
+
+* **Attribute Influence:** Your Strength, Intelligence, and Agility directly impact your combat prowess. 
+   * Strength determines your physical attack power.
+   * Intelligence governs your magical abilities.
+   * Agility influences your chances of dodging attacks and successfully fleeing.
+
+* **Attacks and Weapons:**  When you attack, your damage output is determined by your Strength (for physical attacks) or Intelligence (for magical attacks). If wielding a weapon, its properties may also influence the damage dealt, sometimes adding a degree of randomness to the outcome.
+
+* **Armor Defense:** Equipping armor can mitigate the damage you receive from enemy attacks. 
+
+* **Item Usage:** Your inventory holds a variety of items that can be used in combat.  Healing potions restore lost health, magic scrolls unleash powerful spells, and other consumables may grant temporary advantages.
+
+* **Fleeing:** Should you choose to flee, your Agility will determine your likelihood of success. Failure to escape will leave you vulnerable to a counterattack from your foe. 
+
+* **Experience and Loot:**  Vanquishing your enemies earns you valuable experience points, allowing you to improve your attributes and become a more formidable force in Eldoria.  Defeated monsters may also leave behind valuable loot, including gold and equipment.
+
+### Special Effects
+
+Special effects represent extraordinary conditions that can manifest during combat, impacting either you or your opponent. They can be beneficial or detrimental, dynamically influencing the tide of battle.  Items, spells, or even environmental factors can trigger these effects. Be mindful that special effects are often temporary, dissipating after a certain duration or upon taking a specific amount of damage. 
+
+### Ability Rules
+
+* **Ability Use:** Abilities require specific conditions to be met before they can be used. These conditions might include stat requirements (Strength, Intelligence, Agility), equipped items, the environment, or the target's current state. 
+
+* **Ability Costs:** Some powerful abilities may have additional costs, such as consuming mana or health, or having a cooldown period before they can be used again.
+
+* **Ability Success:** The success of certain abilities, such as those involving deception or manipulation, may depend on a combination of the player's stats and a random chance factor. 
+
+* **Combination Abilities:** Some advanced abilities may require combining multiple skills or items to achieve a more powerful effect.
+
+* **Special Abilities:** Special abilities are rare and often carry significant risks or consequences. They might have unique activation conditions and can drastically alter the course of a battle or the player's overall progress.
+
+### Quest Rules
+
+* **Quest Activation:** Quests are given by Special Characters (NPCs) located in specific locations.
+
+* **Quest Objectives:** Quests have clear objectives that must be fulfilled to complete them. These objectives may involve exploration, combat, item retrieval, or interaction with other NPCs. 
+
+* **Quest Dialogue:** Special Characters provide dialogue and information related to the quest, including clues, hints, and updates on the player's progress.
+
+* **Quest Completion:** Upon completing a quest, the player receives a reward, which could be experience points, gold, items, new abilities, or access to new areas.
+
+* **Quest Failure:** Some quests may have failure conditions, such as a time limit, specific actions that must be avoided, or the death of the quest-giver. Failure to meet the quest requirements may result in penalties or missed opportunities.
+
+
